@@ -1,0 +1,15 @@
+D:\Github\ASP.NET-Programming\Lab 1\NguyenDucTrong_2031200030_Lab1\NguyenDucTrong_2031200030_Lab1\bin\Debug\net8.0\NguyenDucTrong_2031200030_Lab1.exe
+D:\Github\ASP.NET-Programming\Lab 1\NguyenDucTrong_2031200030_Lab1\NguyenDucTrong_2031200030_Lab1\bin\Debug\net8.0\NguyenDucTrong_2031200030_Lab1.deps.json
+D:\Github\ASP.NET-Programming\Lab 1\NguyenDucTrong_2031200030_Lab1\NguyenDucTrong_2031200030_Lab1\bin\Debug\net8.0\NguyenDucTrong_2031200030_Lab1.runtimeconfig.json
+D:\Github\ASP.NET-Programming\Lab 1\NguyenDucTrong_2031200030_Lab1\NguyenDucTrong_2031200030_Lab1\bin\Debug\net8.0\NguyenDucTrong_2031200030_Lab1.dll
+D:\Github\ASP.NET-Programming\Lab 1\NguyenDucTrong_2031200030_Lab1\NguyenDucTrong_2031200030_Lab1\bin\Debug\net8.0\NguyenDucTrong_2031200030_Lab1.pdb
+D:\Github\ASP.NET-Programming\Lab 1\NguyenDucTrong_2031200030_Lab1\NguyenDucTrong_2031200030_Lab1\obj\Debug\net8.0\NguyenDucTrong_2031200030_Lab1.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\ASP.NET-Programming\Lab 1\NguyenDucTrong_2031200030_Lab1\NguyenDucTrong_2031200030_Lab1\obj\Debug\net8.0\NguyenDucTrong_2031200030_Lab1.AssemblyInfoInputs.cache
+D:\Github\ASP.NET-Programming\Lab 1\NguyenDucTrong_2031200030_Lab1\NguyenDucTrong_2031200030_Lab1\obj\Debug\net8.0\NguyenDucTrong_2031200030_Lab1.AssemblyInfo.cs
+D:\Github\ASP.NET-Programming\Lab 1\NguyenDucTrong_2031200030_Lab1\NguyenDucTrong_2031200030_Lab1\obj\Debug\net8.0\NguyenDucTrong_2031200030_Lab1.csproj.CoreCompileInputs.cache
+D:\Github\ASP.NET-Programming\Lab 1\NguyenDucTrong_2031200030_Lab1\NguyenDucTrong_2031200030_Lab1\obj\Debug\net8.0\NguyenDucTrong_2031200030_Lab1.sourcelink.json
+D:\Github\ASP.NET-Programming\Lab 1\NguyenDucTrong_2031200030_Lab1\NguyenDucTrong_2031200030_Lab1\obj\Debug\net8.0\NguyenDucTrong_2031200030_Lab1.dll
+D:\Github\ASP.NET-Programming\Lab 1\NguyenDucTrong_2031200030_Lab1\NguyenDucTrong_2031200030_Lab1\obj\Debug\net8.0\refint\NguyenDucTrong_2031200030_Lab1.dll
+D:\Github\ASP.NET-Programming\Lab 1\NguyenDucTrong_2031200030_Lab1\NguyenDucTrong_2031200030_Lab1\obj\Debug\net8.0\NguyenDucTrong_2031200030_Lab1.pdb
+D:\Github\ASP.NET-Programming\Lab 1\NguyenDucTrong_2031200030_Lab1\NguyenDucTrong_2031200030_Lab1\obj\Debug\net8.0\NguyenDucTrong_2031200030_Lab1.genruntimeconfig.cache
+D:\Github\ASP.NET-Programming\Lab 1\NguyenDucTrong_2031200030_Lab1\NguyenDucTrong_2031200030_Lab1\obj\Debug\net8.0\ref\NguyenDucTrong_2031200030_Lab1.dll
