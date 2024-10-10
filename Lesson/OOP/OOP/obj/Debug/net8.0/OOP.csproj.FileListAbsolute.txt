@@ -1,0 +1,15 @@
+D:\Github\ASP.NET-Programming\Lesson\OOP\OOP\bin\Debug\net8.0\OOP.exe
+D:\Github\ASP.NET-Programming\Lesson\OOP\OOP\bin\Debug\net8.0\OOP.deps.json
+D:\Github\ASP.NET-Programming\Lesson\OOP\OOP\bin\Debug\net8.0\OOP.runtimeconfig.json
+D:\Github\ASP.NET-Programming\Lesson\OOP\OOP\bin\Debug\net8.0\OOP.dll
+D:\Github\ASP.NET-Programming\Lesson\OOP\OOP\bin\Debug\net8.0\OOP.pdb
+D:\Github\ASP.NET-Programming\Lesson\OOP\OOP\obj\Debug\net8.0\OOP.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\ASP.NET-Programming\Lesson\OOP\OOP\obj\Debug\net8.0\OOP.AssemblyInfoInputs.cache
+D:\Github\ASP.NET-Programming\Lesson\OOP\OOP\obj\Debug\net8.0\OOP.AssemblyInfo.cs
+D:\Github\ASP.NET-Programming\Lesson\OOP\OOP\obj\Debug\net8.0\OOP.csproj.CoreCompileInputs.cache
+D:\Github\ASP.NET-Programming\Lesson\OOP\OOP\obj\Debug\net8.0\OOP.sourcelink.json
+D:\Github\ASP.NET-Programming\Lesson\OOP\OOP\obj\Debug\net8.0\OOP.dll
+D:\Github\ASP.NET-Programming\Lesson\OOP\OOP\obj\Debug\net8.0\refint\OOP.dll
+D:\Github\ASP.NET-Programming\Lesson\OOP\OOP\obj\Debug\net8.0\OOP.pdb
+D:\Github\ASP.NET-Programming\Lesson\OOP\OOP\obj\Debug\net8.0\OOP.genruntimeconfig.cache
+D:\Github\ASP.NET-Programming\Lesson\OOP\OOP\obj\Debug\net8.0\ref\OOP.dll
