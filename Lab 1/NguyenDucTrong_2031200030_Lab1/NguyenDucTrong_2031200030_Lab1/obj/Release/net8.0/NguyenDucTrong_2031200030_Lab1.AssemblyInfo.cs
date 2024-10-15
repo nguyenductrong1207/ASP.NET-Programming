@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NguyenDucTrong_2031200030_Lab1")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fd6bbdeb5c198604ddc5f461d0ede9edc92fe50d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3feab8ec99b71d9485130b0605f8ad2c71b47f0d")]
 [assembly: System.Reflection.AssemblyProductAttribute("NguyenDucTrong_2031200030_Lab1")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NguyenDucTrong_2031200030_Lab1")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
