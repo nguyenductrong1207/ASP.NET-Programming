@@ -3,6 +3,30 @@
   "WorkspaceRootPath": "D:\\Github\\ASP.NET-Programming\\Lab 2\\LibraryManagementSystem\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6E0B9DF3-2979-4D9B-A16E-49A027A29572}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\github\\asp.net-programming\\lab 2\\librarymanagementsystem\\librarymanagementsystem\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E0B9DF3-2979-4D9B-A16E-49A027A29572}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E0B9DF3-2979-4D9B-A16E-49A027A29572}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\github\\asp.net-programming\\lab 2\\librarymanagementsystem\\librarymanagementsystem\\premiummember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E0B9DF3-2979-4D9B-A16E-49A027A29572}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\premiummember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E0B9DF3-2979-4D9B-A16E-49A027A29572}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\github\\asp.net-programming\\lab 2\\librarymanagementsystem\\librarymanagementsystem\\borrowtransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E0B9DF3-2979-4D9B-A16E-49A027A29572}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\borrowtransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E0B9DF3-2979-4D9B-A16E-49A027A29572}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\github\\asp.net-programming\\lab 2\\librarymanagementsystem\\librarymanagementsystem\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E0B9DF3-2979-4D9B-A16E-49A027A29572}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E0B9DF3-2979-4D9B-A16E-49A027A29572}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\github\\asp.net-programming\\lab 2\\librarymanagementsystem\\librarymanagementsystem\\imemberactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E0B9DF3-2979-4D9B-A16E-49A027A29572}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\imemberactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E0B9DF3-2979-4D9B-A16E-49A027A29572}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\github\\asp.net-programming\\lab 2\\librarymanagementsystem\\librarymanagementsystem\\iprintable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E0B9DF3-2979-4D9B-A16E-49A027A29572}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\iprintable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6E0B9DF3-2979-4D9B-A16E-49A027A29572}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\github\\asp.net-programming\\lab 2\\librarymanagementsystem\\librarymanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6E0B9DF3-2979-4D9B-A16E-49A027A29572}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,22 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{6E0B9DF3-2979-4D9B-A16E-49A027A29572}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\github\\asp.net-programming\\lab 2\\librarymanagementsystem\\librarymanagementsystem\\returntransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6E0B9DF3-2979-4D9B-A16E-49A027A29572}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\returntransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6E0B9DF3-2979-4D9B-A16E-49A027A29572}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\github\\asp.net-programming\\lab 2\\librarymanagementsystem\\librarymanagementsystem\\borrowtransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E0B9DF3-2979-4D9B-A16E-49A027A29572}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\borrowtransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6E0B9DF3-2979-4D9B-A16E-49A027A29572}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\github\\asp.net-programming\\lab 2\\librarymanagementsystem\\librarymanagementsystem\\premiummember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E0B9DF3-2979-4D9B-A16E-49A027A29572}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\premiummember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6E0B9DF3-2979-4D9B-A16E-49A027A29572}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\github\\asp.net-programming\\lab 2\\librarymanagementsystem\\librarymanagementsystem\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E0B9DF3-2979-4D9B-A16E-49A027A29572}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6E0B9DF3-2979-4D9B-A16E-49A027A29572}|LibraryManagementSystem\\LibraryManagementSystem.csproj|d:\\github\\asp.net-programming\\lab 2\\librarymanagementsystem\\librarymanagementsystem\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E0B9DF3-2979-4D9B-A16E-49A027A29572}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -37,25 +45,25 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 187,
-          "SelectedChildIndex": 3,
+          "DockedWidth": 234,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "PremiumMember.cs",
               "DocumentMoniker": "D:\\Github\\ASP.NET-Programming\\Lab 2\\LibraryManagementSystem\\LibraryManagementSystem\\PremiumMember.cs",
               "RelativeDocumentMoniker": "LibraryManagementSystem\\PremiumMember.cs",
               "ToolTip": "D:\\Github\\ASP.NET-Programming\\Lab 2\\LibraryManagementSystem\\LibraryManagementSystem\\PremiumMember.cs",
               "RelativeToolTip": "LibraryManagementSystem\\PremiumMember.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAIwBwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-15T02:05:08.971Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "ReturnTransaction.cs",
               "DocumentMoniker": "D:\\Github\\ASP.NET-Programming\\Lab 2\\LibraryManagementSystem\\LibraryManagementSystem\\ReturnTransaction.cs",
               "RelativeDocumentMoniker": "LibraryManagementSystem\\ReturnTransaction.cs",
@@ -68,20 +76,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "Book.cs",
               "DocumentMoniker": "D:\\Github\\ASP.NET-Programming\\Lab 2\\LibraryManagementSystem\\LibraryManagementSystem\\Book.cs",
               "RelativeDocumentMoniker": "LibraryManagementSystem\\Book.cs",
               "ToolTip": "D:\\Github\\ASP.NET-Programming\\Lab 2\\LibraryManagementSystem\\LibraryManagementSystem\\Book.cs",
               "RelativeToolTip": "LibraryManagementSystem\\Book.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAgwCwAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAIwDMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-15T01:35:29.346Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "Transaction.cs",
               "DocumentMoniker": "D:\\Github\\ASP.NET-Programming\\Lab 2\\LibraryManagementSystem\\LibraryManagementSystem\\Transaction.cs",
               "RelativeDocumentMoniker": "LibraryManagementSystem\\Transaction.cs",
@@ -94,20 +102,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "Member.cs",
               "DocumentMoniker": "D:\\Github\\ASP.NET-Programming\\Lab 2\\LibraryManagementSystem\\LibraryManagementSystem\\Member.cs",
               "RelativeDocumentMoniker": "LibraryManagementSystem\\Member.cs",
               "ToolTip": "D:\\Github\\ASP.NET-Programming\\Lab 2\\LibraryManagementSystem\\LibraryManagementSystem\\Member.cs",
               "RelativeToolTip": "LibraryManagementSystem\\Member.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAiwC8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-15T01:36:39.965Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "BorrowTransaction.cs",
               "DocumentMoniker": "D:\\Github\\ASP.NET-Programming\\Lab 2\\LibraryManagementSystem\\LibraryManagementSystem\\BorrowTransaction.cs",
               "RelativeDocumentMoniker": "LibraryManagementSystem\\BorrowTransaction.cs",
@@ -121,18 +129,44 @@
           ]
         },
         {
-          "DockedWidth": 213,
+          "DockedWidth": 166,
           "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
+              "Title": "IMemberActions.cs",
+              "DocumentMoniker": "D:\\Github\\ASP.NET-Programming\\Lab 2\\LibraryManagementSystem\\LibraryManagementSystem\\IMemberActions.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\IMemberActions.cs",
+              "ToolTip": "D:\\Github\\ASP.NET-Programming\\Lab 2\\LibraryManagementSystem\\LibraryManagementSystem\\IMemberActions.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\IMemberActions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T02:54:57.754Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IPrintable.cs",
+              "DocumentMoniker": "D:\\Github\\ASP.NET-Programming\\Lab 2\\LibraryManagementSystem\\LibraryManagementSystem\\IPrintable.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\IPrintable.cs",
+              "ToolTip": "D:\\Github\\ASP.NET-Programming\\Lab 2\\LibraryManagementSystem\\LibraryManagementSystem\\IPrintable.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\IPrintable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T02:54:20.122Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Github\\ASP.NET-Programming\\Lab 2\\LibraryManagementSystem\\LibraryManagementSystem\\Program.cs",
               "RelativeDocumentMoniker": "LibraryManagementSystem\\Program.cs",
               "ToolTip": "D:\\Github\\ASP.NET-Programming\\Lab 2\\LibraryManagementSystem\\LibraryManagementSystem\\Program.cs",
               "RelativeToolTip": "LibraryManagementSystem\\Program.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAQwBUAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAQwCsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-15T01:41:34.056Z",
               "EditorCaption": ""
