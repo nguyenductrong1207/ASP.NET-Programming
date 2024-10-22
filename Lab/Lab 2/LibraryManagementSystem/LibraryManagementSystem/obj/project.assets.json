@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Github\\ASP.NET-Programming\\Lab 2\\LibraryManagementSystem\\LibraryManagementSystem\\LibraryManagementSystem.csproj",
+      "projectUniqueName": "D:\\Github\\ASP.NET-Programming\\Lab\\Lab 2\\LibraryManagementSystem\\LibraryManagementSystem\\LibraryManagementSystem.csproj",
       "projectName": "LibraryManagementSystem",
-      "projectPath": "D:\\Github\\ASP.NET-Programming\\Lab 2\\LibraryManagementSystem\\LibraryManagementSystem\\LibraryManagementSystem.csproj",
+      "projectPath": "D:\\Github\\ASP.NET-Programming\\Lab\\Lab 2\\LibraryManagementSystem\\LibraryManagementSystem\\LibraryManagementSystem.csproj",
       "packagesPath": "C:\\Users\\MSI\\.nuget\\packages\\",
-      "outputPath": "D:\\Github\\ASP.NET-Programming\\Lab 2\\LibraryManagementSystem\\LibraryManagementSystem\\obj\\",
+      "outputPath": "D:\\Github\\ASP.NET-Programming\\Lab\\Lab 2\\LibraryManagementSystem\\LibraryManagementSystem\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\MSI\\AppData\\Roaming\\NuGet\\NuGet.Config",
