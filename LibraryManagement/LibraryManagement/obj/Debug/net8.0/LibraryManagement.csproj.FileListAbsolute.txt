@@ -29,3 +29,13 @@ D:\Github\ASP.NET-Programming\LibraryManagement\LibraryManagement\obj\Debug\net8
 D:\Github\ASP.NET-Programming\LibraryManagement\LibraryManagement\obj\Debug\net8.0\LibraryManagement.pdb
 D:\Github\ASP.NET-Programming\LibraryManagement\LibraryManagement\obj\Debug\net8.0\LibraryManagement.genruntimeconfig.cache
 D:\Github\ASP.NET-Programming\LibraryManagement\LibraryManagement\obj\Debug\net8.0\ref\LibraryManagement.dll
+D:\Github\ASP.NET-Programming\LibraryManagement\LibraryManagement\obj\Debug\net8.0\LibraryManagement.csproj.AssemblyReference.cache
+D:\Github\ASP.NET-Programming\LibraryManagement\LibraryManagement\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\Github\ASP.NET-Programming\LibraryManagement\LibraryManagement\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Github\ASP.NET-Programming\LibraryManagement\LibraryManagement\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+D:\Github\ASP.NET-Programming\LibraryManagement\LibraryManagement\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+D:\Github\ASP.NET-Programming\LibraryManagement\LibraryManagement\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Github\ASP.NET-Programming\LibraryManagement\LibraryManagement\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+D:\Github\ASP.NET-Programming\LibraryManagement\LibraryManagement\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Github\ASP.NET-Programming\LibraryManagement\LibraryManagement\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+D:\Github\ASP.NET-Programming\LibraryManagement\LibraryManagement\obj\Debug\net8.0\LibraryM.685EF3B5.Up2Date

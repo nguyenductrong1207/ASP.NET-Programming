@@ -1,10 +1,25 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using LibraryManagement.Models;
+using LibraryManagement.Models.Context;
 
 namespace LibraryManagement.Controllers
 {
     public class BookController : Controller
     {
+        //public readonly BookContext _BookContext;
+
+        //public BookController(BookContext context)
+        //{
+        //    _BookContext = context;
+        //}
+
+        //public IActionResult ShowBookListFromDb()
+        //{
+        //    var books = _BookContext.Book.ToList(); 
+        //    ViewBag.Books = books;
+        //    return View();
+        //}
+
         public IActionResult Index()
         {
             return View();

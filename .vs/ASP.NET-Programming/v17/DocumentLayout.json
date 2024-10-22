@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\Github\\ASP.NET-Programming\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Github\\ASP.NET-Programming\\Lesson\\OOP\\OOP\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Lesson\\OOP\\OOP\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Github\\ASP.NET-Programming\\Lab 2\\LibraryManagementSystem\\LibraryManagementSystem\\Book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Lab 2\\LibraryManagementSystem\\LibraryManagementSystem\\Book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Github\\ASP.NET-Programming\\Lesson\\OOP\\OOP\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Lesson\\OOP\\OOP\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Github\\ASP.NET-Programming\\Lab 2\\LibraryManagementSystem\\LibraryManagementSystem\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,13 +34,13 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Book.cs",
               "DocumentMoniker": "D:\\Github\\ASP.NET-Programming\\Lab 2\\LibraryManagementSystem\\LibraryManagementSystem\\Book.cs",
               "RelativeDocumentMoniker": "Lab 2\\LibraryManagementSystem\\LibraryManagementSystem\\Book.cs",
               "ToolTip": "D:\\Github\\ASP.NET-Programming\\Lab 2\\LibraryManagementSystem\\LibraryManagementSystem\\Book.cs",
               "RelativeToolTip": "Lab 2\\LibraryManagementSystem\\LibraryManagementSystem\\Book.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAIAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-15T01:03:36.853Z",
               "EditorCaption": ""
@@ -65,13 +65,13 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Github\\ASP.NET-Programming\\Lesson\\OOP\\OOP\\Program.cs",
               "RelativeDocumentMoniker": "Lesson\\OOP\\OOP\\Program.cs",
               "ToolTip": "D:\\Github\\ASP.NET-Programming\\Lesson\\OOP\\OOP\\Program.cs",
               "RelativeToolTip": "Lesson\\OOP\\OOP\\Program.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAADYAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACIAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-15T01:26:57.356Z",
               "EditorCaption": ""

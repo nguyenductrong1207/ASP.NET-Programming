@@ -8,9 +8,9 @@ namespace LibraryManagementSystem
 {
     internal class Member : IPrintable, IMemberActions
     {
-        private string MemberID {  get; set; }
-        private string Name { get; set; }
-        private string Email { get; set; }
+        public string MemberID {  get; set; }
+        public string Name { get; set; }
+        public string Email { get; set; }
 
         public Member(string memberID, string name, string email) 
         {
@@ -38,22 +38,21 @@ namespace LibraryManagementSystem
 
         public virtual void BorrowBook(Book book)
         {
-            Console.WriteLine("Here are your borrowed book");
-            Console.WriteLine("ISBN: " + ISBN);
-            Console.WriteLine("Title: " + Title);
-            Console.WriteLine("Author: " + Author);
-            Console.WriteLine("Year: " + Year);
-            Console.WriteLine("CopiesAvailable: " + CopiesAvailable);
+            if (book.CopiesAvailable > 0)
+            {
+                book.CopiesAvailable--;
+                Console.WriteLine($"{Name} borrowed the book '{book.Title}'. Copies left: {book.CopiesAvailable}");
+            }
+            else
+            {
+                Console.WriteLine($"No copies available for the book '{book.Title}'.");
+            }
         }
 
         public virtual void ReturnBook(Book book)
         {
-            Console.WriteLine("Here are your returned book");
-            Console.WriteLine("ISBN: " + ISBN);
-            Console.WriteLine("Title: " + Title);
-            Console.WriteLine("Author: " + Author);
-            Console.WriteLine("Year: " + Year);
-            Console.WriteLine("CopiesAvailable: " + CopiesAvailable);
+            book.CopiesAvailable++;
+            Console.WriteLine($"{Name} returned the book '{book.Title}'. Copies available now: {book.CopiesAvailable}");
         }
     }
 }

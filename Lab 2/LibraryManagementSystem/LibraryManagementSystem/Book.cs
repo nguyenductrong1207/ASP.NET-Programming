@@ -8,10 +8,10 @@ namespace LibraryManagementSystem
 {
     internal class Book : IPrintable
     {
-        private string ISBN { get; set; } // Short Hand GET/SET method
-        private string Title { get; set; }
-        private string Author { get; set; }
-        private int year; // field
+        public string ISBN { get; set; } // Short Hand GET/SET method
+        public string Title { get; set; }
+        public string Author { get; set; }
+        public int year; // field
         public int Year   // GET/SET method property with accessors
         {
             get => year;
