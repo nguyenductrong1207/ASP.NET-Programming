@@ -6,87 +6,96 @@
     <title>@ViewData["Title"] - LibraryManagement</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="~/LibraryManagement.styles.css" asp-append-version="true" />
 </head>
 <body>
-    <header>
-
-        <div class = "container">
-            <div class="row">
-                <div class="col-md-3">
-                    <a class="navbar-brand" href="#">
-                        <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Bootstrap" width="30" height="24">
-                    </a>
+    <header class="d-flex justify-content-between align-items-center">
+        <img src="images/logo.jpg" alt="Logo" width="90" />
+        <div class="search-box" style="width: 50%">
+            <form method="get" asp-action="Search">
+                <div class="input-group">
+                    <input type="text" name="search" placeholder="Search books..." class="form-control" />
+                    <span class="input-group-text">
+                        <i class="fas fa-search"></i>
+                    </span>
                 </div>
-                <div class="col-md-6">
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                </div>
-                <div class="col-md-3">
-                    <div class="btn-group">
-                      <a href="#" class="btn btn-primary mx-2">Login</a>
-                      <a href="#" class="btn btn-primary">Logout</a>
-                    </div>          
-                </div>
-            </div>
-
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-              <iv class="container-fluid">
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Danh mục sách
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Thiếu nhi</a></li>
-                                <li><a class="dropdown-item" href="#">Giáo dục</a></li>
-                                <li><a class="dropdown-item" href="#">Kinh tế</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Trang chủ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="" asp-action="">Tài liệu số</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="" asp-action="">Học liệu điện tử</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="" asp-action="">Sách</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="" asp-action="">Giới thiệu</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="" asp-action="">Liên hệ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="" asp-action="">Quản trị</a>
-                        </li>
-                    </ul>
-                </div>
-              </div>
-            </nav>
+            </form>
+        </div>
+        <div>
+            @if (User.Identity.IsAuthenticated)
+            {
+                <a asp-controller="Account" asp-action="Logout" class="btn btn-primary">Logout</a>
+            }
+            else
+            {
+                <a asp-controller="Account" asp-action="Login" class="btn btn-primary">Login</a>
+            }
         </div>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
+
+    <div class="nav-body">
+        <div class="dropdown">
+            <button type="button" class="btn dropdown-toggle text-white" data-bs-toggle="dropdown" id="dropdownMenuButton">
+                Book List
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" href="#">Link 1</a></li>
+                <li><a class="dropdown-item" href="#">Link 2</a></li>
+                <li><a class="dropdown-item" href="#">Link 3</a></li>
+            </ul>
+        </div>
+
+        <nav>
+            <ul class="nav nav-pills">
+                @if (TempData["Menu"] != null)
+                {  @foreach (var menuItem in TempData["Menu"] as List<string>)
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color:white">@menuItem</a>
+                        </li>
+                    }}
+            </ul>
+        </nav>
     </div>
 
-    <footer class="border-top footer text-muted">
+
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
+
+    <footer class="py-4 bg-light">
         <div class="container">
-            &copy; 2024 - LibraryManagement - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>About Us</h5>
+                    <p>Library Management System provides comprehensive solutions for managing library resources and services.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact</h5>
+                    <p>
+                        Email: library@example.com<br>
+                        Phone: (123) 456-7890<br>
+                        Address: 123 Library Street
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-muted">Home</a></li>
+                        <li><a href="#" class="text-muted">Books</a></li>
+                        <li><a href="#" class="text-muted">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center mb-0">&copy; 2024 - Library Management System - All rights reserved</p>
         </div>
     </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
+
 </body>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+@await RenderSectionAsync("Scripts", required: false)
 </html>
