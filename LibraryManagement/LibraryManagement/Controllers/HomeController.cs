@@ -15,7 +15,6 @@ namespace LibraryManagement.Controllers
 
         public IActionResult Index()
         {
-            TempData["Menu"] = new List<string>() { "Home", "Learning materials", "Books", "About us", "Contact", "Administration" };
             return View();
         }
 

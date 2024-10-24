@@ -1,22 +1,52 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
+	ViewData["Title"] = "Book Detail";
 }
 
+<div class="container mt-5 mb-5">
+	<div class="row">
+		<div class="col-md-4 text-center">
+			<img src="~/images/books/gdcd-6.png" alt="Book Image" class="img-fluid shadow-lg">
+		</div>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <title></title>
-</head>
-<body>
-    <h2>Book List</h2>
+		<div class="col-md-8">
+			<div class="d-flex align-items-center mb-3">
+				<h2 class="mx-3">Giáo Dục Công Dân 6 </h2> <span class="badge bg-warning text-dark">★ 5.0</span>
+			</div>
 
-    <ul>
-        @foreach (var book in ViewBag.Books)
-        {
-            <li>@book.NameBook by @book.Author</li>
-        }
-    </ul>
-</body>
-</html>
+			<div class="d-flex align-items-center mb-3">
+				<div class="ms-3">
+					<p class="mb-0"><strong>Chuyên mục:</strong> Tài liệu số Sách giáo khoa (Cấp 2)</p>
+					<p class="mb-0"><strong>Tác giả:</strong> Trần Tuấn Anh</p>
+					<p class="mb-0"><strong>Nhà xuất bản:</strong> Giáo dục Việt Nam</p>
+					<p class="mb-0"><strong>Xuất bản năm:</strong> 2023</p>
+				</div>
+			</div>
+
+			<div class="ms-3">
+				<p class="text-muted">
+					Bài 1: Tự hào về truyền thống gia đình, dòng họ.
+					- Truyền thống gia đình, dòng họ là những giá trị tốt đẹp mà gia đình, dòng họ đã tạo ra, được lưu truyền, phát huy từ thế hệ này sang thế hệ khác,...
+				</p>
+
+				<div class="d-flex align-items-center">
+					<h3 class="text-danger me-3">15.000 VND</h3>
+					<span class="text-muted text-decoration-line-through">19.000 VND</span>
+				</div>
+
+				<div class="d-flex align-items-center mt-3">
+					<input type="number" class="form-control w-25 me-2" value="1" min="1">
+					<button class="btn btn-warning text-white">
+						<i class="fas fa-shopping-cart"></i> Add To Cart
+					</button>
+				</div>
+
+				<div class="mt-4">
+					<a href="#" class="btn btn-outline-primary"><i class="fab fa-facebook"></i></a>
+					<a href="#" class="btn btn-outline-info"><i class="fab fa-twitter"></i></a>
+					<a href="#" class="btn btn-outline-success"><i class="fab fa-whatsapp"></i></a>
+					<a href="#" class="btn btn-outline-danger"><i class="fas fa-envelope"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

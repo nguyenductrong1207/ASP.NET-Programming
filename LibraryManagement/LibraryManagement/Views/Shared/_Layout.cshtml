@@ -1,97 +1,118 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - LibraryManagement</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="~/LibraryManagement.styles.css" asp-append-version="true" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>@ViewData["Title"]</title>
+	<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<link rel="stylesheet" href="~/LibraryManagement.styles.css" asp-append-version="true" />
 </head>
 <body>
-    <header class="d-flex justify-content-between align-items-center">
-        <img src="images/logo.jpg" alt="Logo" width="90" />
-        <div class="search-box" style="width: 50%">
-            <form method="get" asp-action="Search">
-                <div class="input-group">
-                    <input type="text" name="search" placeholder="Search books..." class="form-control" />
-                    <span class="input-group-text">
-                        <i class="fas fa-search"></i>
-                    </span>
-                </div>
-            </form>
-        </div>
-        <div>
-            @if (User.Identity.IsAuthenticated)
-            {
-                <a asp-controller="Account" asp-action="Logout" class="btn btn-primary">Logout</a>
-            }
-            else
-            {
-                <a asp-controller="Account" asp-action="Login" class="btn btn-primary">Login</a>
-            }
-        </div>
-    </header>
-
-    <div class="nav-body">
-        <div class="dropdown">
-            <button type="button" class="btn dropdown-toggle text-white" data-bs-toggle="dropdown" id="dropdownMenuButton">
-                Book List
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <li><a class="dropdown-item" href="#">Link 1</a></li>
-                <li><a class="dropdown-item" href="#">Link 2</a></li>
-                <li><a class="dropdown-item" href="#">Link 3</a></li>
-            </ul>
-        </div>
-
-        <nav>
-            <ul class="nav nav-pills">
-                @if (TempData["Menu"] != null)
-                {  @foreach (var menuItem in TempData["Menu"] as List<string>)
-                    {
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" style="color:white">@menuItem</a>
-                        </li>
-                    }}
-            </ul>
-        </nav>
-    </div>
+	<div class="container">
+		<div class="row">
+			<header class="d-flex justify-content-between align-items-center">
+				<a class="nav-link" asp-controller="Home" asp-action="Index">
+					<img src="~/images/logo.jpg" alt="Logo" width="120" />
+				</a>
+				<div class="search-box" style="width: 50%">
+					<form method="get" asp-action="Search">
+						<div class="input-group">
+							<input type="text" name="search" placeholder="Search books..." class="form-control" />
+							<span class="input-group-text">
+								<i class="fas fa-search"></i>
+							</span>
+						</div>
+					</form>
+				</div>
+				<div>
+					@if (User.Identity.IsAuthenticated)
+					{
+						<a asp-controller="Account" asp-action="Logout" class="btn btn-info">Logout</a>
+					}
+					else
+					{
+						<a asp-controller="Account" asp-action="SignUp" class="btn btn-info">Sign Up</a>
+						<a asp-controller="Account" asp-action="Login" class="btn btn-info">Login</a>
+					}
+				</div>
+			</header>
+		</div>
+	</div>
 
 
-    <main role="main" class="pb-3">
-        @RenderBody()
-    </main>
+	<div class="nav-body">
+		<div class="dropdown">
+			<button type="button" class="btn dropdown-toggle text-white" data-bs-toggle="dropdown" id="dropdownMenuButton">
+				Book Category
+			</button>
+			<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+				<li><a class="dropdown-item" href="#">Book 1</a></li>
+				<li><a class="dropdown-item" href="#">Book 2</a></li>
+				<li><a class="dropdown-item" href="#">Book 3</a></li>
+			</ul>
+		</div>
 
-    <footer class="py-4 bg-light">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h5>About Us</h5>
-                    <p>Library Management System provides comprehensive solutions for managing library resources and services.</p>
-                </div>
-                <div class="col-md-4">
-                    <h5>Contact</h5>
-                    <p>
-                        Email: library@example.com<br>
-                        Phone: (123) 456-7890<br>
-                        Address: 123 Library Street
-                    </p>
-                </div>
-                <div class="col-md-4">
-                    <h5>Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-muted">Home</a></li>
-                        <li><a href="#" class="text-muted">Books</a></li>
-                        <li><a href="#" class="text-muted">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-            <hr>
-            <p class="text-center mb-0">&copy; 2024 - Library Management System - All rights reserved</p>
-        </div>
-    </footer>
+		<nav>
+			<ul class="nav nav-pills">
+				<li class="nav-item">
+					<a class="nav-link" asp-controller="Home" asp-action="Index" style="color:white">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" asp-controller="" asp-action="" style="color:white">Learning Materials</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" asp-controller="Book" asp-action="List" style="color:white">Books</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" asp-controller="Book" asp-action="BookDetail" style="color:white">Book Detail</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" asp-controller="" asp-action="" style="color:white">About Us</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" asp-controller="" asp-action="" style="color:white">Contact</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" asp-controller="" asp-action="" style="color:white">Administration</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+
+	<main role="main" class="pb-3">
+		@RenderBody()
+	</main>
+
+	<footer class="py-4 bg-light">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<h5>About Us</h5>
+					<p>Library Management System provides comprehensive solutions for managing library resources and services.</p>
+				</div>
+				<div class="col-md-4">
+					<h5>Contact</h5>
+					<p>
+						Email: library@example.com<br>
+						Phone: (123) 456-7890<br>
+						Address: 123 Library Street
+					</p>
+				</div>
+				<div class="col-md-4">
+					<h5>Quick Links</h5>
+					<ul class="list-unstyled">
+						<li><a href="#" class="text-muted">Home</a></li>
+						<li><a href="#" class="text-muted">Books</a></li>
+						<li><a href="#" class="text-muted">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<p class="text-center mb-0">&copy; 2024 - Library Management System - All rights reserved</p>
+		</div>
+	</footer>
 
 </body>
 <script src="~/lib/jquery/dist/jquery.min.js"></script>

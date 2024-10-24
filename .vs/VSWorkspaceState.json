@@ -1,13 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\Lab 2",
-    "\\Lab 2\\LibraryManagementSystem",
-    "\\Lab 2\\LibraryManagementSystem\\LibraryManagementSystem",
-    "\\Lesson",
-    "\\Lesson\\OOP",
-    "\\Lesson\\OOP\\OOP"
+    ""
   ],
-  "SelectedNode": "\\Lesson\\OOP\\OOP\\Program.cs",
+  "SelectedNode": "\\LibraryManagement.sln",
   "PreviewInSolutionExplorer": false
 }
