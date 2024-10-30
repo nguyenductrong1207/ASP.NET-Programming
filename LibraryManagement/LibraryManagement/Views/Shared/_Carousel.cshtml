@@ -1,0 +1,28 @@
+﻿@model IEnumerable<Carousel>
+
+<div id="carousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        @foreach (var item in Model)
+        {
+            <div class="carousel-item @(item.Order == 1 ? "active" : "")">
+                <img src="~/@item.ImageUrl" class="d-block w-100" alt="@item.Title">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>@item.Title</h5>
+                    <p>@item.Description</p>
+                    @if (!string.IsNullOrEmpty(item.LinkUrl))
+                    {
+                        <a href="@item.LinkUrl" class="btn btn-primary">Learn More</a>
+                    }
+                </div>
+            </div>
+        }
+    </div>
+    <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
