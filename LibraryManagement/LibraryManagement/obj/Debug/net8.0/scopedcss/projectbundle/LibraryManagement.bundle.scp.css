@@ -1,3 +1,51 @@
+/* _content/LibraryManagement/Views/Shared/_AdminLayout.cshtml.rz.scp.css */
+/* Basic styling for the sidebar */
+nav.nav.flex-column[b-a5dut8hgxd] {
+    width: 200px;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+    /* Styling for each link in the sidebar */
+    nav.nav.flex-column .nav-link[b-a5dut8hgxd] {
+        color: #343a40;
+        font-size: 16px;
+        padding: 12px;
+        margin: 5px 0;
+        display: flex;
+        align-items: center;
+        border-radius: 4px;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+        /* Icon styling for spacing */
+        nav.nav.flex-column .nav-link i[b-a5dut8hgxd] {
+            margin-right: 10px;
+            font-size: 18px;
+        }
+
+        /* Hover effect for a better user experience */
+        nav.nav.flex-column .nav-link:hover[b-a5dut8hgxd] {
+            background-color: #007bff;
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        /* Active link styling */
+        nav.nav.flex-column .nav-link.active[b-a5dut8hgxd] {
+            background-color: #007bff;
+            color: #ffffff;
+        }
+
+/* Optional: Make the sidebar sticky */
+nav.nav.flex-column[b-a5dut8hgxd] {
+    position: sticky;
+    top: 20px;
+    height: 100vh;
+    overflow-y: auto;
+}
 /* _content/LibraryManagement/Views/Shared/_Layout.cshtml.rz.scp.css */
 /* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */

@@ -7,7 +7,50 @@
 	<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-	<link rel="stylesheet" href="~/LibraryManagement.styles.css" asp-append-version="true" />
+	<link rel="stylesheet" href="~/Shared/_AdminLayout.cshtml.css" asp-append-version="true" />
+
+	<style>
+		/* Basic styling for the sidebar */
+		nav.nav.flex-column {
+			width: 200px;
+			background-color: #f8f9fa;
+			padding: 15px;
+			border-radius: 8px;
+			box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.1);
+		}
+
+			/* Styling for each link in the sidebar */
+			nav.nav.flex-column .nav-link {
+				color: #343a40;
+				font-size: 16px;
+				padding: 12px;
+				margin: 5px 0;
+				display: flex;
+				align-items: center;
+				border-radius: 4px;
+				transition: background-color 0.3s, color 0.3s;
+			}
+
+				/* Icon styling for spacing */
+				nav.nav.flex-column .nav-link i {
+					margin-right: 10px;
+					font-size: 18px;
+				}
+
+				/* Hover effect for a better user experience */
+				nav.nav.flex-column .nav-link:hover {
+					background-color: #007bff;
+					color: #ffffff;
+					text-decoration: none;
+				}
+
+				/* Active link styling */
+				nav.nav.flex-column .nav-link.active {
+					background-color: #007bff;
+					color: #ffffff;
+				}
+
+	</style>
 </head>
 <body>
 	<div class="container">
@@ -33,12 +76,18 @@
 	<main role="main" class="pb-3">
 		<div class="container">
 			<div class="row">
-				<div class="sidebar">
-					
+				<div class="col-md-3">
+					<nav class="nav flex-column">
+						<a class="nav-link" asp-controller="Admin" asp-action="Dashboard"><i class="fas fa-chalkboard"></i> Dashboard</a>
+						<a class="nav-link" asp-controller="Admin" asp-action="Book"><i class="fas fa-book"></i> Books</a>
+						<a class="nav-link" asp-controller="Admin" asp-action="Author"><i class="fas fa-user"></i> Authors</a>
+						<a class="nav-link" asp-controller="Admin" asp-action="Category"><i class="fas fa-list"></i> Categories</a>
+					</nav>
 				</div>
-
-				<div class="content">
-					@RenderBody()
+				<div class="col-md-9">
+					<div class="content">
+						@RenderBody()
+					</div>
 				</div>
 			</div>
 		</div>
