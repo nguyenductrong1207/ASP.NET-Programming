@@ -80,3 +80,4 @@ D:\CSE443\ASP.NET-Programming\LibraryManagement\LibraryManagement\obj\Debug\net8
 D:\CSE443\ASP.NET-Programming\LibraryManagement\LibraryManagement\obj\Debug\net8.0\LibraryManagement.pdb
 D:\CSE443\ASP.NET-Programming\LibraryManagement\LibraryManagement\obj\Debug\net8.0\LibraryManagement.genruntimeconfig.cache
 D:\CSE443\ASP.NET-Programming\LibraryManagement\LibraryManagement\obj\Debug\net8.0\ref\LibraryManagement.dll
+D:\Github\ASP.NET-Programming\LibraryManagement\LibraryManagement\obj\Debug\net8.0\scopedcss\Views\Shared\_AdminLayout.cshtml.rz.scp.css

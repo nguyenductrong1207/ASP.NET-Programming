@@ -8,5 +8,25 @@ namespace LibraryManagement.Controllers
         {
             return View();
         }
-    }
+
+		public IActionResult Dashboard()
+		{
+			return View();
+		}
+
+		public IActionResult Book()
+		{
+			return View();
+		}
+
+		public IActionResult Author()
+		{
+			return View();
+		}
+
+		public IActionResult Category()
+		{
+			return View();
+		}
+	}
 }
