@@ -42,4 +42,11 @@ VALUES
 ('Software Design', 'Books on software design and patterns', GETDATE(), GETDATE(), 1, '/categories/softwaredesign.jpg'),
 ('Networking', 'Resources for network administration and security', GETDATE(), GETDATE(), 1, '/categories/networking.jpg');
 
+INSERT INTO Carousels (CarouselId, ImageUrl, Title, Description, LinkUrl, [Order], IsActive, CreatedDate, UpdatedDate) VALUES
+(1, 'images/carousel/image1.jpg', 'First Carousel', 'This is the first carousel item description.', 'http://example.com/link1', 1, 1, GETDATE(), GETDATE()),
+(2, 'images/carousel/image2.jpg', 'Second Carousel', 'This is the second carousel item description.', 'http://example.com/link2', 2, 1, GETDATE(), GETDATE()),
+(3, 'images/carousel/image3.jpg', 'Third Carousel', 'This is the third carousel item description.', 'http://example.com/link3', 3, 1, GETDATE(), GETDATE()),
+(4, 'images/carousel/image4.jpg', 'Fourth Carousel', 'This is the fourth carousel item description.', 'http://example.com/link4', 4, 1, GETDATE(), GETDATE()),
+(5, 'images/carousel/image5.jpg', 'Fifth Carousel', 'This is the fifth carousel item description.', 'http://example.com/link5', 5, 1, GETDATE(), GETDATE());
+
 
