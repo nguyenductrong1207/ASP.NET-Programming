@@ -9,7 +9,7 @@
         public int CarouselId { get; set; }
 
         [Required, StringLength(200)]
-        public string ImageUrl { get; set; }  
+        public string ImageUrl { get; set; } = "images/carousel/";  
 
         [Required, StringLength(200)]
         public string Title { get; set; }

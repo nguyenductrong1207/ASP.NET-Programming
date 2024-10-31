@@ -1,16 +1,29 @@
 ﻿@{
-	ViewData["Title"] = "Book Detail";
+    ViewData["Title"] = "Book";
 }
 
 <div class="container mt-5 mb-5">
-	<div class="row">
-		<h2>Book List</h2>
+    <div class="row">
+        <h2>Book List</h2>
 
-		<ul>
-			@foreach (var book in ViewBag.Books)
-			{
-				<li>@book.NameBook by @book.Author</li>
-			}
-		</ul>
-	</div>
+        <ul>
+            @foreach (var book in ViewBag.Books)
+            {
+                <li>
+                    <strong>Title:</strong> @book.Title <br />
+                    <strong>Description:</strong> @book.Description <br />
+                    <strong>Book Code:</strong> @book.BookCode <br />
+                    <strong>Publisher:</strong> @book.Publisher <br />
+                    <strong>Published Year:</strong> @book.PublishedYear.Year <br />
+                    <strong>Category:</strong> @book.Category?.Name <br /> 
+                    <strong>Author:</strong> @book.Author?.Name <br /> 
+                    <strong>Total Copies:</strong> @book.TotalCopies <br />
+                    <strong>Available Copies:</strong> @book.AvailableCopies <br />
+                    <strong>Created Date:</strong> @book.CreatedDate.ToShortDateString() <br />
+                    <img src="@book.Avatar" alt="@book.Title" style="width:100px;height:auto;" /> 
+                    <a href="@book.Pdf" target="_blank">Download PDF</a> 
+                </li>
+            }
+        </ul>
+    </div>
 </div>

@@ -2,13 +2,8 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="container-fluid px-0">
-    <div class="banner position-relative">
-        <img src="images/children-bookstore.jpg" class="img-fluid w-100" alt="banner-bookstore"
-             style="max-height: 500px">
-    </div>
-</div>
-
+<!-- Include Carousel here -->
+@await Html.PartialAsync("_Carousel", (IEnumerable<Carousel>)Model)
 
 <div class="container mt-4">
     <h3 class="text-center mb-4">TÀI LIỆU SỐ SÁCH THAM KHẢO (CẤP 2)</h3>

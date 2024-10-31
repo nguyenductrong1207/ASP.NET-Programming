@@ -20,6 +20,13 @@ namespace LibraryManagement.Controllers
         //    return View();
         //}
 
+        private readonly LibraryDbContext _LibraryDbContext;
+
+        public BookController(LibraryDbContext libraryDbContext)
+        {
+            _LibraryDbContext = libraryDbContext;
+        }
+
         public IActionResult Index()
         {
             return View();
@@ -32,16 +39,18 @@ namespace LibraryManagement.Controllers
 
         public IActionResult List()
         {
-            List<Book> bookList = new List<Book>
-            {
-                new Book { NameBook = "The Pragmatic Programmer", Author = "Andrew Hunt" },
-                new Book { NameBook = "Clean Code", Author = "Robert C. Martin" },
-                new Book { NameBook = "Design Patterns", Author = "Erich Gamma" },
-                new Book { NameBook = "Introduction to Algorithms", Author = "Thomas H. Cormen" },
-                new Book { NameBook = "The Art of Computer Programming", Author = "Donald E. Knuth" }
-            };
+            //List<Book> bookList = new List<Book>
+            //{
+            //    new Book { Title = "The Pragmatic Programmer", Description = "Andrew Hunt" },
+            //    new Book { Title = "Clean Code", Description = "Robert C. Martin" },
+            //    new Book { Title = "Design Patterns", Description = "Erich Gamma" },
+            //    new Book { Title = "Introduction to Algorithms", Description = "Thomas H. Cormen" },
+            //    new Book { Title = "The Art of Computer Programming", Description = "Donald E. Knuth" }
+            //};
 
-            ViewBag.Books = bookList;
+            var books = _LibraryDbContext.Books.OrderBy(b => b.BookId).ToList(); // LinQ
+
+            ViewBag.Books = books;
             return View();
         }
     }
