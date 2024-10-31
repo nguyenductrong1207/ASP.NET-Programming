@@ -205,8 +205,24 @@
       "PackagePath": "staticwebassets\\images\\am-nhac.png"
     },
     {
+      "Id": "D:\\Github\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\wwwroot\\images\\books\\children-bookstore.jpg",
+      "PackagePath": "staticwebassets\\images\\books\\children-bookstore.jpg"
+    },
+    {
+      "Id": "D:\\Github\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\wwwroot\\images\\books\\cong-nghe-6.png",
+      "PackagePath": "staticwebassets\\images\\books\\cong-nghe-6.png"
+    },
+    {
       "Id": "D:\\Github\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\wwwroot\\images\\books\\gdcd-6.png",
       "PackagePath": "staticwebassets\\images\\books\\gdcd-6.png"
+    },
+    {
+      "Id": "D:\\Github\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\wwwroot\\images\\books\\lich-su-6.png",
+      "PackagePath": "staticwebassets\\images\\books\\lich-su-6.png"
+    },
+    {
+      "Id": "D:\\Github\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\wwwroot\\images\\books\\tieng-anh.png",
+      "PackagePath": "staticwebassets\\images\\books\\tieng-anh.png"
     },
     {
       "Id": "D:\\Github\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\wwwroot\\images\\carousel\\image1.jpg",
