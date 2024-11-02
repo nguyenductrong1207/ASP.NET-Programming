@@ -3,7 +3,7 @@
 }
 
 <div class="container mt-5 mb-5">
-    <h2 class="mb-4">Book List</h2>
+    <h2 class="mb-4">@ViewBag.Category Books</h2>
     <div class="row">
         @foreach (var book in ViewBag.Books)
         {
@@ -23,7 +23,12 @@
                             <strong>Available Copies:</strong> @book.AvailableCopies <br />
                             <strong>Created Date:</strong> @book.CreatedDate.ToShortDateString() <br />
                         </p>
-                        <a href="@book.Pdf" class="btn btn-primary" target="_blank">Download PDF</a>
+                        <div class="d-flex justify-content-between">
+                            <a href="@Url.Action("BookDetail", "Book", new { id = book.BookId })" class="btn btn-secondary">View Details</a>
+                            @* <a asp-controller="Book" asp-action="BookDetail" asp-route-id="@book.BookId" class="btn btn-secondary">View Details</a> *@
+
+                            <a href="@book.Pdf" class="btn btn-primary" target="_blank">Read PDF</a>
+                        </div>
                     </div>
                 </div>
             </div>
