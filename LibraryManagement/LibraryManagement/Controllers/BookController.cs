@@ -37,20 +37,14 @@ namespace LibraryManagement.Controllers
             return View();
         }
 
-        public IActionResult List()
+        public IActionResult List(string category)
         {
-            //List<Book> bookList = new List<Book>
-            //{
-            //    new Book { Title = "The Pragmatic Programmer", Description = "Andrew Hunt" },
-            //    new Book { Title = "Clean Code", Description = "Robert C. Martin" },
-            //    new Book { Title = "Design Patterns", Description = "Erich Gamma" },
-            //    new Book { Title = "Introduction to Algorithms", Description = "Thomas H. Cormen" },
-            //    new Book { Title = "The Art of Computer Programming", Description = "Donald E. Knuth" }
-            //};
-
-            var books = _LibraryDbContext.Books.OrderBy(b => b.BookId).ToList(); // LinQ
-
+            var books = _LibraryDbContext.Books
+                .Where(b => b.Category.Title.Equals(category, StringComparison.OrdinalIgnoreCase))
+                .OrderBy(b => b.BookId)
+                .ToList();
             ViewBag.Books = books;
+            ViewBag.Category = category;
             return View();
         }
     }
