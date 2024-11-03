@@ -9,7 +9,7 @@
         {
             <div class="col-md-4 mb-4">
                 <div class="card">
-                    <img src="@book.Avatar" alt="@book.Title" class="card-img-top" style="height: 200px; object-fit: cover;" />
+                    <img src="~/@book.Avatar" alt="@book.Title" class="card-img-top" style="height: 200px; object-fit: cover;" />
                     <div class="card-body">
                         <h5 class="card-title">@book.Title</h5>
                         <p class="card-text">
@@ -18,7 +18,7 @@
                             <strong>Publisher:</strong> @book.Publisher <br />
                             <strong>Published Year:</strong> @book.PublishedYear.Year <br />
                             <strong>Category:</strong> @book.Category?.Name <br />
-                            <strong>Author:</strong> @book.Author?.Name <br />
+                            <strong>Author:</strong> @book.Author?.FirstName <br />
                             <strong>Total Copies:</strong> @book.TotalCopies <br />
                             <strong>Available Copies:</strong> @book.AvailableCopies <br />
                             <strong>Created Date:</strong> @book.CreatedDate.ToShortDateString() <br />

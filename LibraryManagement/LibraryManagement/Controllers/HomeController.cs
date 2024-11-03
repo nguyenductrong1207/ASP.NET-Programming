@@ -7,13 +7,7 @@ namespace LibraryManagement.Controllers
 {
     public class HomeController : Controller
     {
-        //private readonly ILogger<HomeController> _logger;
         private readonly LibraryDbContext _LibraryDbContext;
-
-        //public HomeController(ILogger<HomeController> logger)
-        //{
-        //    _logger = logger;
-        //}
 
         public HomeController(LibraryDbContext libraryDbContext)
         {
@@ -22,13 +16,21 @@ namespace LibraryManagement.Controllers
 
         public IActionResult Index()
         {
-            // Fetch active carousel items ordered by `Order` property
             var carouselItems = _LibraryDbContext.Carousels
            .Where(c => c.IsActive)
            .OrderBy(c => c.Order)
            .ToList();
 
-            return View(carouselItems); // Pass carousel items to the view
+            var bookList = _LibraryDbContext.Books
+               .ToList(); 
+
+            var viewModel = new HomeViewModel 
+            {
+                CarouselItems = carouselItems,
+                Books = bookList
+            };
+
+            return View(viewModel);
         }
 
         public IActionResult Privacy()

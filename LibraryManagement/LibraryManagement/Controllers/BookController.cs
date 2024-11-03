@@ -32,17 +32,26 @@ namespace LibraryManagement.Controllers
             return View();
         }
 
-        public IActionResult BookDetail()
+        public IActionResult BookDetail(int id)
         {
-            return View();
+            var book = _LibraryDbContext.Books
+                .FirstOrDefault(b => b.BookId == id);
+
+            if (book == null)
+            {
+                return NotFound();
+            }
+
+            return View(book);
         }
 
         public IActionResult List(string category)
         {
-            var books = _LibraryDbContext.Books
-                .Where(b => b.Category.Title.Equals(category, StringComparison.OrdinalIgnoreCase))
+            List<Book> books = _LibraryDbContext.Books
+                .Where(b => b.Category != null && b.Category.Name.ToLower() == category.ToLower())
                 .OrderBy(b => b.BookId)
                 .ToList();
+
             ViewBag.Books = books;
             ViewBag.Category = category;
             return View();

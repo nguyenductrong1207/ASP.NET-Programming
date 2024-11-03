@@ -1,106 +1,29 @@
-﻿@{
+﻿@model LibraryManagement.Models.HomeViewModel
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
 <!-- Include Carousel here -->
-@await Html.PartialAsync("_Carousel", (IEnumerable<Carousel>)Model)
+@await Html.PartialAsync("_Carousel", Model.CarouselItems)
 
 <div class="container mt-4">
-    <h3 class="text-center mb-4">TÀI LIỆU SỐ SÁCH THAM KHẢO (CẤP 2)</h3>
+    <h3 class="text-center mb-4">Book List</h3>
 
     <div class="row row-cols-lg-5 g-2">
-        <div class="col">
-            <div class="card" style="width: 15rem;">
-                <img src="images/am-nhac.png" class="card-img-top" alt="am-nhac-6">
-                <div class="card-body">
-                    <h5 class="card-title">Âm nhạc 6: Sách giáo viên: Chân trời sáng tạo</h5>
-                    <p class="card-text">Hồ Ngọc Hải</p>
-                    <a href="#" class="btn btn-primary">Đọc sách online</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col">
-            <div class="card" style="width: 15rem;">
-                <img src="images/gdcd-6.png" class="card-img-top" alt="gdcd-6">
-                <div class="card-body">
-                    <h5 class="card-title">Giáo dục công dân 6: Sách giáo viên: Chân trời sáng tạo</h5>
-                    <p class="card-text">Đinh Phương Duy</p>
-                    <a href="#" class="btn btn-primary">Đọc sách online</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col">
-            <div class="card" style="width: 15rem;">
-                <img src="images/my-thuat-6.png" class="card-img-top" alt="my-thuat-6">
-                <div class="card-body">
-                    <h5 class="card-title">Mỹ thuật 6: Sách giáo viên: Chân trời sáng tạo</h5>
-                    <p class="card-text">Nguyễn Thị Nhung</p>
-                    <a href="#" class="btn btn-primary">Đọc sách online</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col">
-            <div class="card" style="width: 15rem;">
-                <img src="images/shs-tieng-anh-6-tap-1-1.jpg" class="card-img-top" alt="tieng-anh-6">
-                <div class="card-body">
-                    <h5 class="card-title">Tiếng anh 6: Sách giáo viên: Chân trời sáng tạo</h5>
-                    <p class="card-text">TPH</p>
-                    <a href="#" class="btn btn-primary">Đọc sách online</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col">
-            <div class="card" style="width: 15rem;">
-                <img src="images/lich-su-6.png" class="card-img-top" alt="lich-su-6">
-                <div class="card-body">
-                    <h5 class="card-title">Lịch sử và địa lý 6: Sách giáo viên: Chân trời sáng tạo</h5>
-                    <p class="card-text">Hà Bích Liên</p>
-                    <a href="#" class="btn btn-primary">Đọc sách online</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col">
-            <div class="card" style="width: 15rem;">
-                <img src="images/khoa-hoc-tu-nhien.png" class="card-img-top" alt="khoa-hoc-6">
-                <div class="card-body">
-                    <h5 class="card-title">Khoa học tự nhiên 6: Sách giáo viên: Chân trời sáng tạo</h5>
-                    <p class="card-text">Cao Cự Giác</p>
-                    <a href="#" class="btn btn-primary">Đọc sách online</a>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="col">
-            <div class="card" style="width: 15rem; min-height: 350px;">
-                <img src="images/cong-nghe-6.png" class="card-img-top" alt="cong-nghe-6">
-                <div class="card-body">
-                    <div class="card-title-container">
-                        <h5 class="card-title">Công nghệ 6: Sách giáo viên: Chân trời sáng tạo</h5>
+        @foreach (var book in Model.Books)
+        {
+            <div class="col">
+                <div class="card" style="width: 15rem;">
+                    <img src="@book.Avatar" class="card-img-top" alt="@book.Title">
+                    <div class="card-body">
+                        <h5 class="card-title">@book.Title</h5>
+                        <p class="card-text">@book.Description</p>
+                        <a href="@Url.Action("BookDetail", "Book", new { id = book.BookId })" class="btn btn-primary">View Details</a>
                     </div>
-                    <p class="card-text">Bùi Văn Hồng</p>
-                    <a href="#" class="btn btn-primary">Đọc sách online</a>
                 </div>
             </div>
-        </div>
-
-        <div class="col">
-            <div class="card" style="width: 15rem; min-height: 350px">
-                <img src="images/xa-hoi-6.png" class="card-img-top" alt="xa-hoi-6">
-                <div class="card-body">
-                    <div class="card-title-container" style="height: 80px;width: 220px; overflow: hidden; text-overflow: ellipsis">
-                        <h5 class="card-title">Hoạt động trải nghiệm, hướng nghiệp 6: Sách giáo viên: Chân trời sáng tạo</h5>
-                    </div>
-                    <p class="card-text">Đoàn Thị Kim Thoa</p>
-                    <a href="#" class="btn btn-primary">Đọc sách online</a>
-                </div>
-            </div>
-        </div>
+        }
     </div>
 
     <nav aria-label="Page navigation example" style="display: flex; justify-content: center; margin-top: 20px">
