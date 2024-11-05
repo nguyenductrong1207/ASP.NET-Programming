@@ -27,7 +27,7 @@
                             <a href="@Url.Action("BookDetail", "Book", new { id = book.BookId })" class="btn btn-secondary">View Details</a>
                             @* <a asp-controller="Book" asp-action="BookDetail" asp-route-id="@book.BookId" class="btn btn-secondary">View Details</a> *@
 
-                            <a href="@book.Pdf" class="btn btn-primary" target="_blank">Read PDF</a>
+                            <a asp-action="ReadPdf" asp-route-id="@book.BookId" class="btn btn-primary">Read PDF</a>
                         </div>
                     </div>
                 </div>

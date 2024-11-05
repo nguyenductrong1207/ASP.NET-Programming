@@ -37,6 +37,6 @@ namespace LibraryManagement.Models
 
         public string Avatar { get; set; } = "images/books/";
 
-        public string Pdf { get; set; }  
+        public string Pdf { get; set; } = "pdf/";
     }
 }
