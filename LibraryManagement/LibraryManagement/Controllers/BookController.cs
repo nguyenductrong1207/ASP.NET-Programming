@@ -58,8 +58,6 @@ namespace LibraryManagement.Controllers
 
             var pdfUrl = Url.Content($"/{book.Pdf}");
             ViewBag.PdfPath = pdfUrl;
-            ViewBag.Title = book.Title;
-
             return View();
         }
 
