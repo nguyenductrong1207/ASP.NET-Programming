@@ -1,12 +1,25 @@
 ﻿@{
-    ViewBag.Title = ViewBag.Title;
+    Layout = null;
 }
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
 
-<h2 class="text-center">@ViewBag.Title</h2>
+    iframe {
+        width: 100vw;
+        height: 100vh;
+        border: none;
+        overflow: hidden;
+    }
+</style>
 
 @if (!string.IsNullOrEmpty(ViewBag.PdfPath))
 {
-    <iframe src="@ViewBag.PdfPath" width="100%" height="1000px"></iframe>
+
+    <iframe src="@ViewBag.PdfPath" allow="fullscreen"></iframe>
 }
 else
 {
