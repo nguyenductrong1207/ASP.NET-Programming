@@ -18,7 +18,7 @@
                             <strong>Publisher:</strong> @book.Publisher <br />
                             <strong>Published Year:</strong> @book.PublishedYear.Year <br />
                             <strong>Category:</strong> @book.Category?.Name <br />
-                            <strong>Author:</strong> @book.Author?.FirstName <br />
+                            <strong>Author:</strong> @book.Author?.FirstName @book.Author?.LastName<br />
                             <strong>Total Copies:</strong> @book.TotalCopies <br />
                             <strong>Available Copies:</strong> @book.AvailableCopies <br />
                             <strong>Created Date:</strong> @book.CreatedDate.ToShortDateString() <br />

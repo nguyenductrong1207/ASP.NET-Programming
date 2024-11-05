@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using LibraryManagement.Models;
 using LibraryManagement.Models.Context;
+using Microsoft.EntityFrameworkCore;
 
 namespace LibraryManagement.Controllers
 {
@@ -35,6 +36,8 @@ namespace LibraryManagement.Controllers
         public IActionResult BookDetail(int id)
         {
             var book = _LibraryDbContext.Books
+                .Include(b => b.Author)
+                .Include(b => b.Category)
                 .FirstOrDefault(b => b.BookId == id);
 
             if (book == null)
@@ -48,6 +51,8 @@ namespace LibraryManagement.Controllers
         public IActionResult List(string category)
         {
             List<Book> books = _LibraryDbContext.Books
+                .Include(b => b.Author)
+                .Include(b => b.Category)
                 .Where(b => b.Category != null && b.Category.Name.ToLower() == category.ToLower())
                 .OrderBy(b => b.BookId)
                 .ToList();
