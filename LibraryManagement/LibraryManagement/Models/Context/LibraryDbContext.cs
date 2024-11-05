@@ -17,5 +17,7 @@ namespace LibraryManagement.Models.Context
         public DbSet<Category> Categories { get; set; }
 
         public DbSet<Carousel> Carousels { get; set; }
+
+        public DbSet<Tesst> Tessts { get; set; }
     }
 }
