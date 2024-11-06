@@ -13,8 +13,8 @@
     <div class="row row-cols-lg-5 g-2">
         @foreach (var book in Model.Books)
         {
-            <div class="col">
-                <div class="card" style="width: 15rem;">
+                <div class="col-md-4 mb-4">
+                <div class="card">
                     <img src="@book.Avatar" class="card-img-top" alt="@book.Title">
                     <div class="card-body">
                         <h5 class="card-title">@book.Title</h5>

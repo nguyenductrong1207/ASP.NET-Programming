@@ -1,0 +1,38 @@
+﻿/* General container spacing and alignment */
+.container {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+/* Book card styling */
+.card {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer
+}
+
+/* Book image styling */
+.card-img-top {
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+/* Book title styling */
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+/* Book details and description */
+.card-text {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #666;
+}
+
+    .card-text strong {
+        color: #333;
+        font-weight: 600;
+    }
