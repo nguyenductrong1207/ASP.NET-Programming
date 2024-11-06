@@ -4416,24 +4416,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\MSI\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\LibraryManagement.csproj",
+      "projectUniqueName": "D:\\Github\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\LibraryManagement.csproj",
       "projectName": "LibraryManagement",
-      "projectPath": "D:\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\LibraryManagement.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "D:\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\obj\\",
+      "projectPath": "D:\\Github\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\LibraryManagement.csproj",
+      "packagesPath": "C:\\Users\\MSI\\.nuget\\packages\\",
+      "outputPath": "D:\\Github\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\MSI\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4507,7 +4502,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

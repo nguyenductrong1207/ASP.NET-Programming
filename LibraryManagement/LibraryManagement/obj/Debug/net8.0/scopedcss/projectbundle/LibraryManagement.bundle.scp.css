@@ -1,3 +1,100 @@
+/* _content/LibraryManagement/Views/Book/List.cshtml.rz.scp.css */
+.container[b-cfkww5291r] {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.card[b-cfkww5291r] {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer
+}
+
+.card-img-top[b-cfkww5291r] {
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card-title[b-cfkww5291r] {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.card-text[b-cfkww5291r] {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #666;
+}
+
+    .card-text strong[b-cfkww5291r] {
+        color: #333;
+        font-weight: 600;
+    }
+
+.btn-primary[b-cfkww5291r] {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+    .btn-primary:hover[b-cfkww5291r] {
+        background-color: #0056b3;
+        border-color: #004494;
+    }
+
+.btn-secondary[b-cfkww5291r] {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+    .btn-secondary:hover[b-cfkww5291r] {
+        background-color: #5a6268;
+        border-color: #4e555b;
+    }
+
+.d-flex.justify-content-between[b-cfkww5291r] {
+    margin-top: 1rem;
+}
+/* _content/LibraryManagement/Views/Home/Index.cshtml.rz.scp.css */
+/* General container spacing and alignment */
+.container[b-ftopbbasri] {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+/* Book card styling */
+.card[b-ftopbbasri] {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer
+}
+
+/* Book image styling */
+.card-img-top[b-ftopbbasri] {
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+/* Book title styling */
+.card-title[b-ftopbbasri] {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+/* Book details and description */
+.card-text[b-ftopbbasri] {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #666;
+}
+
+    .card-text strong[b-ftopbbasri] {
+        color: #333;
+        font-weight: 600;
+    }
 /* _content/LibraryManagement/Views/Shared/_AdminLayout.cshtml.rz.scp.css */
 /* Basic styling for the sidebar */
 nav.nav.flex-column[b-a5dut8hgxd] {

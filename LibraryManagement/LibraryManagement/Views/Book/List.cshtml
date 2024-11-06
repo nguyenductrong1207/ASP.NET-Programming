@@ -4,12 +4,12 @@
 
 <div class="container mt-5 mb-5">
     <h2 class="mb-4">@ViewBag.Category Books</h2>
-    <div class="row">
+    <div class="row row-cols-lg-5 g-2 ">
         @foreach (var book in ViewBag.Books)
         {
             <div class="col-md-4 mb-4">
                 <div class="card">
-                    <img src="~/@book.Avatar" alt="@book.Title" class="card-img-top" style="height: 200px; object-fit: cover;" />
+                    <img src="~/@book.Avatar" alt="@book.Title" class="card-img-top"  />
                     <div class="card-body">
                         <h5 class="card-title">@book.Title</h5>
                         <p class="card-text">
