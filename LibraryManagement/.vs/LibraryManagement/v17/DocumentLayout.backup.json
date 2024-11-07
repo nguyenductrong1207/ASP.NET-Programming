@@ -1,38 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Github\\ASP.NET-Programming\\LibraryManagement\\",
+  "WorkspaceRootPath": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2D996B9B-116E-4AEA-A233-C6FB4C0445C0}|LibraryManagement\\LibraryManagement.csproj|d:\\github\\asp.net-programming\\librarymanagement\\librarymanagement\\views\\book\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2D996B9B-116E-4AEA-A233-C6FB4C0445C0}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\views\\book\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2D996B9B-116E-4AEA-A233-C6FB4C0445C0}|LibraryManagement\\LibraryManagement.csproj|d:\\github\\asp.net-programming\\librarymanagement\\librarymanagement\\views\\book\\list.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{2D996B9B-116E-4AEA-A233-C6FB4C0445C0}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\views\\book\\list.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2D996B9B-116E-4AEA-A233-C6FB4C0445C0}|LibraryManagement\\LibraryManagement.csproj|d:\\github\\asp.net-programming\\librarymanagement\\librarymanagement\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2D996B9B-116E-4AEA-A233-C6FB4C0445C0}|LibraryManagement\\LibraryManagement.csproj|d:\\github\\asp.net-programming\\asp.net-programming\\librarymanagement\\librarymanagement\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2D996B9B-116E-4AEA-A233-C6FB4C0445C0}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2D996B9B-116E-4AEA-A233-C6FB4C0445C0}|LibraryManagement\\LibraryManagement.csproj|d:\\github\\asp.net-programming\\librarymanagement\\librarymanagement\\views\\book\\bookdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2D996B9B-116E-4AEA-A233-C6FB4C0445C0}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\views\\book\\bookdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{2D996B9B-116E-4AEA-A233-C6FB4C0445C0}|LibraryManagement\\LibraryManagement.csproj|d:\\github\\asp.net-programming\\asp.net-programming\\librarymanagement\\librarymanagement\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2D996B9B-116E-4AEA-A233-C6FB4C0445C0}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2D996B9B-116E-4AEA-A233-C6FB4C0445C0}|LibraryManagement\\LibraryManagement.csproj|d:\\github\\asp.net-programming\\librarymanagement\\librarymanagement\\views\\book\\readpdf.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2D996B9B-116E-4AEA-A233-C6FB4C0445C0}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\views\\book\\readpdf.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{2D996B9B-116E-4AEA-A233-C6FB4C0445C0}|LibraryManagement\\LibraryManagement.csproj|d:\\github\\asp.net-programming\\asp.net-programming\\librarymanagement\\librarymanagement\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2D996B9B-116E-4AEA-A233-C6FB4C0445C0}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2D996B9B-116E-4AEA-A233-C6FB4C0445C0}|LibraryManagement\\LibraryManagement.csproj|d:\\github\\asp.net-programming\\librarymanagement\\librarymanagement\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2D996B9B-116E-4AEA-A233-C6FB4C0445C0}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2D996B9B-116E-4AEA-A233-C6FB4C0445C0}|LibraryManagement\\LibraryManagement.csproj|d:\\github\\asp.net-programming\\asp.net-programming\\librarymanagement\\librarymanagement\\views\\category\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2D996B9B-116E-4AEA-A233-C6FB4C0445C0}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\views\\category\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2D996B9B-116E-4AEA-A233-C6FB4C0445C0}|LibraryManagement\\LibraryManagement.csproj|d:\\github\\asp.net-programming\\librarymanagement\\librarymanagement\\models\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2D996B9B-116E-4AEA-A233-C6FB4C0445C0}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\models\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2D996B9B-116E-4AEA-A233-C6FB4C0445C0}|LibraryManagement\\LibraryManagement.csproj|d:\\github\\asp.net-programming\\asp.net-programming\\librarymanagement\\librarymanagement\\views\\category\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2D996B9B-116E-4AEA-A233-C6FB4C0445C0}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\views\\category\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2D996B9B-116E-4AEA-A233-C6FB4C0445C0}|LibraryManagement\\LibraryManagement.csproj|d:\\github\\asp.net-programming\\librarymanagement\\librarymanagement\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2D996B9B-116E-4AEA-A233-C6FB4C0445C0}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2D996B9B-116E-4AEA-A233-C6FB4C0445C0}|LibraryManagement\\LibraryManagement.csproj|d:\\github\\asp.net-programming\\asp.net-programming\\librarymanagement\\librarymanagement\\views\\category\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2D996B9B-116E-4AEA-A233-C6FB4C0445C0}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\views\\category\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D996B9B-116E-4AEA-A233-C6FB4C0445C0}|LibraryManagement\\LibraryManagement.csproj|d:\\github\\asp.net-programming\\asp.net-programming\\librarymanagement\\librarymanagement\\views\\category\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2D996B9B-116E-4AEA-A233-C6FB4C0445C0}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\views\\category\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D996B9B-116E-4AEA-A233-C6FB4C0445C0}|LibraryManagement\\LibraryManagement.csproj|d:\\github\\asp.net-programming\\asp.net-programming\\librarymanagement\\librarymanagement\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D996B9B-116E-4AEA-A233-C6FB4C0445C0}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -41,13 +41,9 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 220,
-          "SelectedChildIndex": 2,
+          "DockedWidth": 361,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -55,101 +51,112 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "List.cshtml",
-              "DocumentMoniker": "D:\\Github\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\Views\\Book\\List.cshtml",
-              "RelativeDocumentMoniker": "LibraryManagement\\Views\\Book\\List.cshtml",
-              "ToolTip": "D:\\Github\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\Views\\Book\\List.cshtml",
-              "RelativeToolTip": "LibraryManagement\\Views\\Book\\List.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-06T07:44:14.317Z",
+              "Title": "BookController.cs",
+              "DocumentMoniker": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\Controllers\\BookController.cs",
+              "RelativeDocumentMoniker": "LibraryManagement\\Controllers\\BookController.cs",
+              "ToolTip": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\Controllers\\BookController.cs",
+              "RelativeToolTip": "LibraryManagement\\Controllers\\BookController.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAowF8AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T10:00:33.916Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "List.cshtml.css",
-              "DocumentMoniker": "D:\\Github\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\Views\\Book\\List.cshtml.css",
-              "RelativeDocumentMoniker": "LibraryManagement\\Views\\Book\\List.cshtml.css",
-              "ToolTip": "D:\\Github\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\Views\\Book\\List.cshtml.css",
-              "RelativeToolTip": "LibraryManagement\\Views\\Book\\List.cshtml.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-11-06T07:44:08.9Z",
+              "Title": "_AdminLayout.cshtml",
+              "DocumentMoniker": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeDocumentMoniker": "LibraryManagement\\Views\\Shared\\_AdminLayout.cshtml",
+              "ToolTip": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeToolTip": "LibraryManagement\\Views\\Shared\\_AdminLayout.cshtml",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAFgAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-06T14:28:02.143Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 361,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "LibraryManagement\\Controllers\\CategoryController.cs",
+              "ToolTip": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "LibraryManagement\\Controllers\\CategoryController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T08:23:31.313Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "BookController.cs",
-              "DocumentMoniker": "D:\\Github\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\Controllers\\BookController.cs",
-              "RelativeDocumentMoniker": "LibraryManagement\\Controllers\\BookController.cs",
-              "ToolTip": "D:\\Github\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\Controllers\\BookController.cs",
-              "RelativeToolTip": "LibraryManagement\\Controllers\\BookController.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAkwAYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T12:56:14.141Z",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\Views\\Category\\Index.cshtml",
+              "RelativeDocumentMoniker": "LibraryManagement\\Views\\Category\\Index.cshtml",
+              "ToolTip": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\Views\\Category\\Index.cshtml",
+              "RelativeToolTip": "LibraryManagement\\Views\\Category\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-07T09:05:56.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\Views\\Category\\Create.cshtml",
+              "RelativeDocumentMoniker": "LibraryManagement\\Views\\Category\\Create.cshtml",
+              "ToolTip": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\Views\\Category\\Create.cshtml",
+              "RelativeToolTip": "LibraryManagement\\Views\\Category\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-07T08:58:53.918Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "BookDetail.cshtml",
-              "DocumentMoniker": "D:\\Github\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\Views\\Book\\BookDetail.cshtml",
-              "RelativeDocumentMoniker": "LibraryManagement\\Views\\Book\\BookDetail.cshtml",
-              "ToolTip": "D:\\Github\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\Views\\Book\\BookDetail.cshtml",
-              "RelativeToolTip": "LibraryManagement\\Views\\Book\\BookDetail.cshtml",
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\Views\\Category\\Edit.cshtml",
+              "RelativeDocumentMoniker": "LibraryManagement\\Views\\Category\\Edit.cshtml",
+              "ToolTip": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\Views\\Category\\Edit.cshtml",
+              "RelativeToolTip": "LibraryManagement\\Views\\Category\\Edit.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-05T12:56:07.275Z"
+              "WhenOpened": "2024-11-07T09:08:22.877Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "ReadPdf.cshtml",
-              "DocumentMoniker": "D:\\Github\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\Views\\Book\\ReadPdf.cshtml",
-              "RelativeDocumentMoniker": "LibraryManagement\\Views\\Book\\ReadPdf.cshtml",
-              "ToolTip": "D:\\Github\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\Views\\Book\\ReadPdf.cshtml",
-              "RelativeToolTip": "LibraryManagement\\Views\\Book\\ReadPdf.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\Views\\Category\\Details.cshtml",
+              "RelativeDocumentMoniker": "LibraryManagement\\Views\\Category\\Details.cshtml",
+              "ToolTip": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\Views\\Category\\Details.cshtml",
+              "RelativeToolTip": "LibraryManagement\\Views\\Category\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-05T12:56:06.067Z"
+              "WhenOpened": "2024-11-07T09:08:30.069Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Category.cs",
-              "DocumentMoniker": "D:\\Github\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\Models\\Category.cs",
-              "RelativeDocumentMoniker": "LibraryManagement\\Models\\Category.cs",
-              "ToolTip": "D:\\Github\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\Models\\Category.cs",
-              "RelativeToolTip": "LibraryManagement\\Models\\Category.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T12:56:01.19Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Author.cs",
-              "DocumentMoniker": "D:\\Github\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\Models\\Author.cs",
-              "RelativeDocumentMoniker": "LibraryManagement\\Models\\Author.cs",
-              "ToolTip": "D:\\Github\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\Models\\Author.cs",
-              "RelativeToolTip": "LibraryManagement\\Models\\Author.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T12:55:59.425Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Book.cs",
-              "DocumentMoniker": "D:\\Github\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\Models\\Book.cs",
-              "RelativeDocumentMoniker": "LibraryManagement\\Models\\Book.cs",
-              "ToolTip": "D:\\Github\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\Models\\Book.cs",
-              "RelativeToolTip": "LibraryManagement\\Models\\Book.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T12:55:58.313Z"
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\Views\\Category\\Delete.cshtml",
+              "RelativeDocumentMoniker": "LibraryManagement\\Views\\Category\\Delete.cshtml",
+              "ToolTip": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\Views\\Category\\Delete.cshtml",
+              "RelativeToolTip": "LibraryManagement\\Views\\Category\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-07T09:08:37.839Z",
+              "EditorCaption": ""
             }
           ]
         }

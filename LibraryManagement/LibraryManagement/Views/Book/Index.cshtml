@@ -1,0 +1,102 @@
+﻿@model IEnumerable<LibraryManagement.Models.Book>
+
+@{
+    ViewData["Title"] = "Book Management";
+    Layout = "_AdminLayout";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BookCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Publisher)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PublishedYear)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Category)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Author)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TotalCopies)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AvailableCopies)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreatedDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Avatar)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Pdf)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BookCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Publisher)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PublishedYear)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Category.CategoryId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Author.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalCopies)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AvailableCopies)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreatedDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Avatar)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Pdf)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.BookId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.BookId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.BookId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
