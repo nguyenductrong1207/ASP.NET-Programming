@@ -25,7 +25,7 @@ namespace LibraryManagement.Controllers
             return View(await _LibraryDbContext.Users.ToListAsync());
         }
 
-        // GET: User/Details/5
+        // GET: User/Details/Id
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -63,7 +63,7 @@ namespace LibraryManagement.Controllers
             return View(user);
         }
 
-        // GET: User/Edit/5
+        // GET: User/Edit/Id
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -79,7 +79,7 @@ namespace LibraryManagement.Controllers
             return View(user);
         }
 
-        // POST: User/Edit/5
+        // POST: User/Edit/Id
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("UserId,FullName,Description,Password,Email,Phone,Address,Status,CreatedDate,UserCode,IsLocked,IsDeleted,IsActive,ActiveCode,Avatar")] User user)
@@ -112,7 +112,7 @@ namespace LibraryManagement.Controllers
             return View(user);
         }
 
-        // GET: User/Delete/5
+        // GET: User/Delete/Id
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -130,7 +130,7 @@ namespace LibraryManagement.Controllers
             return View(user);
         }
 
-        // POST: User/Delete/5
+        // POST: User/Delete/Id
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)

@@ -26,7 +26,7 @@ namespace LibraryManagement.Controllers
             return View(await libraryDbContext.ToListAsync());
         }
 
-        // GET: Loan/Details/5
+        // GET: Loan/Details/Id
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -65,12 +65,18 @@ namespace LibraryManagement.Controllers
                 await _LibraryDbContext.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+
+            foreach (var error in ModelState.Values.SelectMany(v => v.Errors))
+            {
+                Console.WriteLine(error.ErrorMessage);
+            }
+
             ViewData["BookId"] = new SelectList(_LibraryDbContext.Books, "BookId", "BookCode", loan.BookId);
             ViewData["UserId"] = new SelectList(_LibraryDbContext.Users, "UserId", "Email", loan.UserId);
             return View(loan);
         }
 
-        // GET: Loan/Edit/5
+        // GET: Loan/Edit/Id
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -88,7 +94,7 @@ namespace LibraryManagement.Controllers
             return View(loan);
         }
 
-        // POST: Loan/Edit/5
+        // POST: Loan/Edit/Id
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("LoanId,UserId,BookId,LoanDate,DueDate,ReturnDate,Status")] Loan loan)
@@ -123,7 +129,7 @@ namespace LibraryManagement.Controllers
             return View(loan);
         }
 
-        // GET: Loan/Delete/5
+        // GET: Loan/Delete/Id
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -143,7 +149,7 @@ namespace LibraryManagement.Controllers
             return View(loan);
         }
 
-        // POST: Loan/Delete/5
+        // POST: Loan/Delete/Id
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)

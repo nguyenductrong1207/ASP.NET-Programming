@@ -23,11 +23,11 @@ namespace LibraryManagement.Models
 
         [ForeignKey("Category")]
         public int CategoryId { get; set; }
-        public Category Category { get; set; }
+        public Category? Category { get; set; }
 
         [ForeignKey("Author")]
         public int AuthorId { get; set; }
-        public Author Author { get; set; }
+        public Author? Author { get; set; }
 
         public int TotalCopies { get; set; }
 

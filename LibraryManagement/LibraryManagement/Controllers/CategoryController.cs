@@ -25,7 +25,7 @@ namespace LibraryManagement.Controllers
             return View(await _LibraryDbContext.Categories.ToListAsync());
         }
 
-        // GET: Category/Details/5
+        // GET: Category/Details/Id
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -63,7 +63,7 @@ namespace LibraryManagement.Controllers
             return View(category);
         }
 
-        // GET: Category/Edit/5
+        // GET: Category/Edit/Id
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -79,7 +79,7 @@ namespace LibraryManagement.Controllers
             return View(category);
         }
 
-        // POST: Category/Edit/5
+        // POST: Category/Edit/Id
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("CategoryId,Name,Description,CreatedDate,UpdatedDate,IsActive,Avatar")] Category category)
@@ -112,7 +112,7 @@ namespace LibraryManagement.Controllers
             return View(category);
         }
 
-        // GET: Category/Delete/5
+        // GET: Category/Delete/Id
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -130,7 +130,7 @@ namespace LibraryManagement.Controllers
             return View(category);
         }
 
-        // POST: Category/Delete/5
+        // POST: Category/Delete/Id
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
