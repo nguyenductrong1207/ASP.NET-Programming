@@ -66,11 +66,6 @@ namespace LibraryManagement.Controllers
                 return RedirectToAction(nameof(Index));
             }
 
-            foreach (var error in ModelState.Values.SelectMany(v => v.Errors))
-            {
-                Console.WriteLine(error.ErrorMessage);
-            }
-
             ViewData["BookId"] = new SelectList(_LibraryDbContext.Books, "BookId", "BookCode", loan.BookId);
             ViewData["UserId"] = new SelectList(_LibraryDbContext.Users, "UserId", "Email", loan.UserId);
             return View(loan);
