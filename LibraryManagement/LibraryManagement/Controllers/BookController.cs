@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using LibraryManagement.Models;
 using LibraryManagement.Models.Context;
+using Microsoft.AspNetCore.Authorization;
 
 namespace LibraryManagement.Controllers
 {
@@ -19,6 +20,7 @@ namespace LibraryManagement.Controllers
             _LibraryDbContext = libraryDbContext;
         }
 
+		[Authorize]
 		public IActionResult BookDetail(int id)
 		{
 			var book = _LibraryDbContext.Books
@@ -48,6 +50,7 @@ namespace LibraryManagement.Controllers
 			return View();
 		}
 
+		[Authorize]
 		public IActionResult ReadPdf(int id)
 		{
 			var book = _LibraryDbContext.Books.FirstOrDefault(b => b.BookId == id);
