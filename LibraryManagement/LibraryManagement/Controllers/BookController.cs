@@ -97,7 +97,7 @@ namespace LibraryManagement.Controllers
         public IActionResult Create()
         {
             ViewData["AuthorId"] = new SelectList(_LibraryDbContext.Authors, "AuthorId", "FirstName");
-            ViewData["CategoryId"] = new SelectList(_LibraryDbContext.Categories, "CategoryId", "CategoryId");
+            ViewData["CategoryId"] = new SelectList(_LibraryDbContext.Categories, "CategoryId", "Name");
             return View();
         }
 
@@ -113,7 +113,7 @@ namespace LibraryManagement.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["AuthorId"] = new SelectList(_LibraryDbContext.Authors, "AuthorId", "FirstName", book.AuthorId);
-            ViewData["CategoryId"] = new SelectList(_LibraryDbContext.Categories, "CategoryId", "CategoryId", book.CategoryId);
+            ViewData["CategoryId"] = new SelectList(_LibraryDbContext.Categories, "CategoryId", "Name", book.CategoryId);
             return View(book);
         }
 
@@ -131,7 +131,7 @@ namespace LibraryManagement.Controllers
                 return NotFound();
             }
             ViewData["AuthorId"] = new SelectList(_LibraryDbContext.Authors, "AuthorId", "FirstName", book.AuthorId);
-            ViewData["CategoryId"] = new SelectList(_LibraryDbContext.Categories, "CategoryId", "CategoryId", book.CategoryId);
+            ViewData["CategoryId"] = new SelectList(_LibraryDbContext.Categories, "CategoryId", "Name", book.CategoryId);
             return View(book);
         }
 
@@ -166,7 +166,7 @@ namespace LibraryManagement.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["AuthorId"] = new SelectList(_LibraryDbContext.Authors, "AuthorId", "FirstName", book.AuthorId);
-            ViewData["CategoryId"] = new SelectList(_LibraryDbContext.Categories, "CategoryId", "CategoryId", book.CategoryId);
+            ViewData["CategoryId"] = new SelectList(_LibraryDbContext.Categories, "CategoryId", "Name", book.CategoryId);
             return View(book);
         }
 
