@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LibraryManagement.Migrations
 {
     [DbContext(typeof(LibraryDbContext))]
-    [Migration("20241114164258_CreateIdentitySchema")]
-    partial class CreateIdentitySchema
+    [Migration("20241119135124_AddIdentitySupport")]
+    partial class AddIdentitySupport
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

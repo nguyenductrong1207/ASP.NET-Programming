@@ -37,9 +37,41 @@ namespace LibraryManagement.Controllers
 			return View(model);
 		}
 
+		[HttpGet]
 		public IActionResult SignUp()
 		{
 			return View();
+		}
+
+		[HttpPost]
+		[ValidateAntiForgeryToken]
+		public async Task<IActionResult> SignUp(SignUpViewModel model)
+		{
+			if (ModelState.IsValid)
+			{
+				var user = new IdentityUser
+				{
+					UserName = model.Email,
+					Email = model.Email
+				};
+
+				// Create user with password
+				var result = await _userManager.CreateAsync(user, model.Password);
+				if (result.Succeeded)
+				{
+					// Sign in the user after successful sign-up
+					await _signInManager.SignInAsync(user, isPersistent: false);
+					return RedirectToAction("Index", "Home");
+				}
+
+				// Display errors if registration fails
+				foreach (var error in result.Errors)
+				{
+					ModelState.AddModelError(string.Empty, error.Description);
+				}
+			}
+
+			return View(model);
 		}
 
 		public async Task<IActionResult> Logout()

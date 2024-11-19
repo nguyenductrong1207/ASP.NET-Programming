@@ -15,7 +15,8 @@ builder.Services.AddDbContext<LibraryDbContext>(options =>
 // Configure Identity services with default settings
 builder.Services.AddIdentity<IdentityUser, IdentityRole>()
     .AddEntityFrameworkStores<LibraryDbContext>()
-    .AddDefaultTokenProviders();
+	.AddSignInManager<SignInManager<IdentityUser>>()
+	.AddDefaultTokenProviders();
 
 // Register RoleService and BookService for Dependency Injection
 builder.Services.AddScoped<IRoleService, RoleService>();
@@ -43,6 +44,22 @@ builder.Services.AddAuthentication()
 
 var app = builder.Build();
 
+// Seed the admin user and roles
+using (var scope = app.Services.CreateScope())
+{
+	var services = scope.ServiceProvider;
+	try
+	{
+		var userManager = services.GetRequiredService<UserManager<IdentityUser>>();
+		var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
+		await SeedAdminUser(userManager, roleManager);
+	}
+	catch (Exception ex)
+	{
+		Console.WriteLine($"Error seeding admin user: {ex.Message}");
+	}
+}
+
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
@@ -57,7 +74,7 @@ app.UseStaticFiles();
 app.UseRouting();
 
 // Add authentication and authorization middleware
-app.UseAuthentication(); // This line enables authentication
+app.UseAuthentication(); 
 app.UseAuthorization();
 
 app.MapControllerRoute(
@@ -65,3 +82,34 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
+
+// Method to seed the admin user and role
+static async Task SeedAdminUser(UserManager<IdentityUser> userManager, RoleManager<IdentityRole> roleManager)
+{
+	const string adminEmail = "admin@gmail.com";
+	const string adminPassword = "Admin@123";
+
+	// Create Admin Role if it doesn't exist
+	if (!await roleManager.RoleExistsAsync("Admin"))
+	{
+		await roleManager.CreateAsync(new IdentityRole("Admin"));
+	}
+
+	// Create Admin User if it doesn't exist
+	if (await userManager.FindByEmailAsync(adminEmail) == null)
+	{
+		var adminUser = new IdentityUser
+		{
+			UserName = adminEmail,
+			Email = adminEmail,
+			EmailConfirmed = true
+		};
+
+		var result = await userManager.CreateAsync(adminUser, adminPassword);
+		if (result.Succeeded)
+		{
+			// Assign Admin Role to the User
+			await userManager.AddToRoleAsync(adminUser, "Admin");
+		}
+	}
+}
