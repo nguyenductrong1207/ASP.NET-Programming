@@ -1,32 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{2D996B9B-116E-4AEA-A233-C6FB4C0445C0}|LibraryManagement\\LibraryManagement.csproj|d:\\github\\asp.net-programming\\asp.net-programming\\librarymanagement\\librarymanagement\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{2D996B9B-116E-4AEA-A233-C6FB4C0445C0}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2D996B9B-116E-4AEA-A233-C6FB4C0445C0}|LibraryManagement\\LibraryManagement.csproj|d:\\github\\asp.net-programming\\asp.net-programming\\librarymanagement\\librarymanagement\\api\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2D996B9B-116E-4AEA-A233-C6FB4C0445C0}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\api\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2D996B9B-116E-4AEA-A233-C6FB4C0445C0}|LibraryManagement\\LibraryManagement.csproj|d:\\github\\asp.net-programming\\asp.net-programming\\librarymanagement\\librarymanagement\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2D996B9B-116E-4AEA-A233-C6FB4C0445C0}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2D996B9B-116E-4AEA-A233-C6FB4C0445C0}|LibraryManagement\\LibraryManagement.csproj|d:\\github\\asp.net-programming\\asp.net-programming\\librarymanagement\\librarymanagement\\models\\signupviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2D996B9B-116E-4AEA-A233-C6FB4C0445C0}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\models\\signupviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2D996B9B-116E-4AEA-A233-C6FB4C0445C0}|LibraryManagement\\LibraryManagement.csproj|d:\\github\\asp.net-programming\\asp.net-programming\\librarymanagement\\librarymanagement\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2D996B9B-116E-4AEA-A233-C6FB4C0445C0}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2D996B9B-116E-4AEA-A233-C6FB4C0445C0}|LibraryManagement\\LibraryManagement.csproj|d:\\github\\asp.net-programming\\asp.net-programming\\librarymanagement\\librarymanagement\\api\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2D996B9B-116E-4AEA-A233-C6FB4C0445C0}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\api\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -34,89 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 294,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LoginViewModel.cs",
-              "DocumentMoniker": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\Models\\LoginViewModel.cs",
-              "RelativeDocumentMoniker": "LibraryManagement\\Models\\LoginViewModel.cs",
-              "ToolTip": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\Models\\LoginViewModel.cs",
-              "RelativeToolTip": "LibraryManagement\\Models\\LoginViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T15:35:49.378Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SignUpViewModel.cs",
-              "DocumentMoniker": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\Models\\SignUpViewModel.cs",
-              "RelativeDocumentMoniker": "LibraryManagement\\Models\\SignUpViewModel.cs",
-              "ToolTip": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\Models\\SignUpViewModel.cs",
-              "RelativeToolTip": "LibraryManagement\\Models\\SignUpViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T15:35:48.65Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "User.cs",
-              "DocumentMoniker": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\Models\\User.cs",
-              "RelativeDocumentMoniker": "LibraryManagement\\Models\\User.cs",
-              "ToolTip": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\Models\\User.cs",
-              "RelativeToolTip": "LibraryManagement\\Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T15:35:47.144Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "BookController.cs",
-              "DocumentMoniker": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\API\\BookController.cs",
-              "RelativeDocumentMoniker": "LibraryManagement\\API\\BookController.cs",
-              "ToolTip": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\API\\BookController.cs",
-              "RelativeToolTip": "LibraryManagement\\API\\BookController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T15:33:34.376Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\API\\UserController.cs",
-              "RelativeDocumentMoniker": "LibraryManagement\\API\\UserController.cs",
-              "ToolTip": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\API\\UserController.cs",
-              "RelativeToolTip": "LibraryManagement\\API\\UserController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T15:33:19.211Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "site.js",
-              "DocumentMoniker": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\wwwroot\\js\\site.js",
-              "RelativeDocumentMoniker": "LibraryManagement\\wwwroot\\js\\site.js",
-              "ToolTip": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\wwwroot\\js\\site.js",
-              "RelativeToolTip": "LibraryManagement\\wwwroot\\js\\site.js",
-              "ViewState": "AgIAAPAAAAAAAAAAAAAcwAQBAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-11-26T15:30:27.606Z",
-              "EditorCaption": ""
             }
           ]
         }
