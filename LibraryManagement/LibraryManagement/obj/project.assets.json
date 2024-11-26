@@ -8336,19 +8336,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\MSI\\.nuget\\packages\\": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Github\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\LibraryManagement.csproj",
+      "projectUniqueName": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\LibraryManagement.csproj",
       "projectName": "LibraryManagement",
-      "projectPath": "D:\\Github\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\LibraryManagement.csproj",
-      "packagesPath": "C:\\Users\\MSI\\.nuget\\packages\\",
-      "outputPath": "D:\\Github\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\obj\\",
+      "projectPath": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\LibraryManagement.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\MSI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8440,7 +8440,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
