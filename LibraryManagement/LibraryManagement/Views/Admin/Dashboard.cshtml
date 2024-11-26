@@ -1,10 +1,75 @@
 ﻿@{
-    ViewData["Title"] = " Dashboard";
-}
-
-@{
+    ViewData["Title"] = "Admin Dashboard";
     Layout = "_AdminLayout";
 }
 
+<div class="container mt-4">
+    <h2 class="mb-4">Admin Dashboard</h2>
 
-<h2>Dashboard</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card bg-info text-white mb-4">
+                <div class="card-body">
+                    <h5>Manage Categories</h5>
+                    <p>Add, edit, or delete categories</p>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <a asp-controller="Category" asp-action="Index" class="text-white">Manage Categories</a>
+                    <i class="fas fa-tags"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card bg-secondary text-white mb-4">
+                <div class="card-body">
+                    <h5>Manage Authors</h5>
+                    <p>Add, edit, or delete authors</p>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <a asp-controller="Author" asp-action="Index" class="text-white">Manage Authors</a>
+                    <i class="fas fa-pen-nib"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card bg-success text-white mb-4">
+                <div class="card-body">
+                    <h5>Manage Books</h5>
+                    <p>Add, edit, or delete books</p>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <a asp-controller="Book" asp-action="Index" class="text-white">Manage Books</a>
+                    <i class="fas fa-book"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card bg-primary text-white mb-4">
+                <div class="card-body">
+                    <h5>Manage Users</h5>
+                    <p>Add, edit, or delete users</p>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <a asp-controller="User" asp-action="Index" class="text-white">Manage Users</a>
+                    <i class="fas fa-users"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card bg-warning text-dark mb-4">
+                <div class="card-body">
+                    <h5>Manage Loans</h5>
+                    <p>View and manage book loans</p>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <a asp-controller="Loan" asp-action="Index" class="text-dark">Manage Loans</a>
+                    <i class="fas fa-calendar-check"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

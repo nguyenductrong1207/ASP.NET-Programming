@@ -5,7 +5,7 @@
     Layout = "_AdminLayout";
 }
 
-<h1>Index</h1>
+<h1>Books</h1>
 
 <p>
     <a asp-action="Create">Create New</a>
@@ -71,7 +71,7 @@
                 @Html.DisplayFor(modelItem => item.PublishedYear)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Category.CategoryId)
+                @Html.DisplayFor(modelItem => item.Category.Name)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Author.FirstName)

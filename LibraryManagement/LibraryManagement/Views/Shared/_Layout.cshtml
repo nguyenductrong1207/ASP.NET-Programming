@@ -43,15 +43,15 @@
 
 
     <div class="nav-body">
-@*         <div class="dropdown">
-            <button type="button" class="btn dropdown-toggle text-white" data-bs-toggle="dropdown" id="dropdownmenubutton">
-                book category
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownmenubutton">
-                <li><a class="dropdown-item" href="#">book 1</a></li>
-                <li><a class="dropdown-item" href="#">book 2</a></li>
-                <li><a class="dropdown-item" href="#">book 3</a></li>
-            </ul>
+        @*         <div class="dropdown">
+        <button type="button" class="btn dropdown-toggle text-white" data-bs-toggle="dropdown" id="dropdownmenubutton">
+        book category
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownmenubutton">
+        <li><a class="dropdown-item" href="#">book 1</a></li>
+        <li><a class="dropdown-item" href="#">book 2</a></li>
+        <li><a class="dropdown-item" href="#">book 3</a></li>
+        </ul>
         </div> *@
 
         <nav>
@@ -59,9 +59,12 @@
                 <li class="nav-item mx-5">
                     <a class="nav-link" asp-controller="Home" asp-action="Index" style="color:white">Home page</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" asp-controller="Admin" asp-action="Dashboard" style="color:white">Admin</a>
-                </li>
+                @if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
+                {
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Admin" asp-action="Dashboard" style="color:white">Admin</a>
+                    </li>
+                }
                 <li class="nav-item">
                     <a class="nav-link" asp-controller="Book" asp-action="List" asp-route-category="Programming" style="color:white">Programming Book</a>
                 </li>

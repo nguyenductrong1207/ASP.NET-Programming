@@ -20,54 +20,54 @@ namespace LibraryManagement.Controllers
             _LibraryDbContext = libraryDbContext;
         }
 
-		[Authorize]
-		public IActionResult BookDetail(int id)
-		{
-			var book = _LibraryDbContext.Books
-				.Include(b => b.Author)
-				.Include(b => b.Category)
-				.FirstOrDefault(b => b.BookId == id);
+        [Authorize]
+        public IActionResult BookDetail(int id)
+        {
+            var book = _LibraryDbContext.Books
+                .Include(b => b.Author)
+                .Include(b => b.Category)
+                .FirstOrDefault(b => b.BookId == id);
 
-			if (book == null)
-			{
-				return NotFound();
-			}
+            if (book == null)
+            {
+                return NotFound();
+            }
 
-			return View(book);
-		}
+            return View(book);
+        }
 
-		public IActionResult List(string category)
-		{
-			List<Book> books = _LibraryDbContext.Books
-				.Include(b => b.Author)
-				.Include(b => b.Category)
-				.Where(b => b.Category != null && b.Category.Name.ToLower() == category.ToLower())
-				.OrderBy(b => b.BookId)
-				.ToList();
+        public IActionResult List(string category)
+        {
+            List<Book> books = _LibraryDbContext.Books
+                .Include(b => b.Author)
+                .Include(b => b.Category)
+                .Where(b => b.Category != null && b.Category.Name.ToLower() == category.ToLower())
+                .OrderBy(b => b.BookId)
+                .ToList();
 
-			ViewBag.Books = books;
-			ViewBag.Category = category;
-			return View();
-		}
+            ViewBag.Books = books;
+            ViewBag.Category = category;
+            return View();
+        }
 
-		[Authorize]
-		public IActionResult ReadPdf(int id)
-		{
-			var book = _LibraryDbContext.Books.FirstOrDefault(b => b.BookId == id);
-			if (book == null || string.IsNullOrEmpty(book.Pdf))
-			{
-				return NotFound("This book has not have the PDF version.");
-			}
+        [Authorize]
+        public IActionResult ReadPdf(int id)
+        {
+            var book = _LibraryDbContext.Books.FirstOrDefault(b => b.BookId == id);
+            if (book == null || string.IsNullOrEmpty(book.Pdf))
+            {
+                return NotFound("This book has not have the PDF version.");
+            }
 
-			var pdfUrl = Url.Content($"/{book.Pdf}");
-			ViewBag.PdfPath = pdfUrl;
-			return View();
-		}
+            var pdfUrl = Url.Content($"/{book.Pdf}");
+            ViewBag.PdfPath = pdfUrl;
+            return View();
+        }
 
         // Book Management
 
-		// GET: Book
-		public async Task<IActionResult> Index()
+        // GET: Book
+        public async Task<IActionResult> Index()
         {
             var libraryDbContext = _LibraryDbContext.Books.Include(b => b.Author).Include(b => b.Category);
             return View(await libraryDbContext.ToListAsync());
@@ -209,5 +209,28 @@ namespace LibraryManagement.Controllers
         {
             return _LibraryDbContext.Books.Any(e => e.BookId == id);
         }
+
+        [HttpGet]
+        public async Task<IActionResult> Search(string search)
+        {
+            if (string.IsNullOrWhiteSpace(search))
+            {
+                return Json(new List<object>());
+            }
+
+            var books = await _LibraryDbContext.Books
+                .Where(b => EF.Functions.Like(b.Title, $"%{search}%"))
+                .Select(b => new
+                {
+                    bookId = b.BookId,
+                    title = b.Title,
+                    authorFirstName = b.Author != null ? b.Author.FirstName : "Unknown Author",
+                    categoryName = b.Category != null ? b.Category.Name : "Uncategorized"
+                })
+                .ToListAsync();
+
+            return Json(books);
+        }
+
     }
 }

@@ -1,120 +1,123 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>@ViewData["Title"]</title>
-	<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-	<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-	<link rel="stylesheet" href="~/Shared/_AdminLayout.cshtml.css" asp-append-version="true" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="~/Shared/_AdminLayout.cshtml.css" asp-append-version="true" />
 
-	<style>
-		/* Basic styling for the sidebar */
-		nav.nav.flex-column {
-			width: 200px;
-			background-color: #f8f9fa;
-			padding: 15px;
-			border-radius: 8px;
-			box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.1);
-		}
+    <style>
+        /* Basic styling for the sidebar */
+        nav.nav.flex-column {
+            width: 200px;
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.1);
+        }
 
-			/* Styling for each link in the sidebar */
-			nav.nav.flex-column .nav-link {
-				color: #343a40;
-				font-size: 16px;
-				padding: 12px;
-				margin: 5px 0;
-				display: flex;
-				align-items: center;
-				border-radius: 4px;
-				transition: background-color 0.3s, color 0.3s;
-			}
+            /* Styling for each link in the sidebar */
+            nav.nav.flex-column .nav-link {
+                color: #343a40;
+                font-size: 16px;
+                padding: 12px;
+                margin: 5px 0;
+                display: flex;
+                align-items: center;
+                border-radius: 4px;
+                transition: background-color 0.3s, color 0.3s;
+            }
 
-				/* Icon styling for spacing */
-				nav.nav.flex-column .nav-link i {
-					margin-right: 10px;
-					font-size: 18px;
-				}
+                /* Icon styling for spacing */
+                nav.nav.flex-column .nav-link i {
+                    margin-right: 10px;
+                    font-size: 18px;
+                }
 
-				/* Hover effect for a better user experience */
-				nav.nav.flex-column .nav-link:hover {
-					background-color: #007bff;
-					color: #ffffff;
-					text-decoration: none;
-				}
+                /* Hover effect for a better user experience */
+                nav.nav.flex-column .nav-link:hover {
+                    background-color: #007bff;
+                    color: #ffffff;
+                    text-decoration: none;
+                }
 
-				/* Active link styling */
-				nav.nav.flex-column .nav-link.active {
-					background-color: #007bff;
-					color: #ffffff;
-				}
-
-		/* Optional: Make the sidebar sticky */
-/* 		nav.nav.flex-column {
-			position: sticky;
-			top: 20px;
-			height: 100vh;
-			overflow-y: auto;
-		} */
-
-	</style>
+                /* Active link styling */
+                nav.nav.flex-column .nav-link.active {
+                    background-color: #007bff;
+                    color: #ffffff;
+                }
+    </style>
 </head>
 <body>
-	<div class="container">
-		<div class="row">
-			<header class="d-flex justify-content-between align-items-center">
-				<a class="nav-link" asp-controller="Home" asp-action="Index">
-					<img src="~/images/logo.jpg" alt="Logo" width="120" />
-				</a>
-				<div class="search-box" style="width: 50%">
-					<form method="get" asp-action="Search">
-						<div class="input-group">
-							<input type="text" name="search" placeholder="Search books..." class="form-control" />
-							<span class="input-group-text">
-								<i class="fas fa-search"></i>
-							</span>
-						</div>
-					</form>
-				</div>
-			</header>
-		</div>
-	</div>
+    <div class="container">
+        <div class="row">
+            <header class="d-flex justify-content-between align-items-center">
+                <a class="nav-link" asp-controller="Home" asp-action="Index">
+                    <img src="~/images/logo.jpg" alt="Logo" width="120" />
+                </a>
+                <div class="search-box" style="width: 50%">
+                    <div class="row">
+                        <form id="searchForm" method="get" action="/Book/Search">
+                            <div class="input-group">
+                                <input type="text" id="searchInput" name="search" placeholder="Search books..." class="form-control" />
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </form>
 
-	<main role="main" class="pb-3">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-3">
-					<nav class="nav flex-column">
-						<a class="nav-link" asp-controller="Admin" asp-action="Dashboard"><i class="fas fa-chalkboard"></i> Dashboard</a>
-						<a class="nav-link" asp-controller="Category" asp-action="Index"><i class="fas fa-list"></i> Category</a>
-						<a class="nav-link" asp-controller="Author" asp-action="Index"><i class="fas fa-user"></i> Author</a>
-						<a class="nav-link" asp-controller="Book" asp-action="Index"><i class="fas fa-book"></i> Book</a>
-						<a class="nav-link" asp-controller="User" asp-action="Index"><i class="fas fa-users"></i> User</a>
-						<a class="nav-link" asp-controller="Loan" asp-action="Index"><i class="fas fa-money-check-alt"></i> Loan</a>
-					</nav>
-				</div>
-				<div class="col-md-9">
-					<div class="content">
-						@RenderBody()
-					</div>
-				</div>
-			</div>
-		</div>
-	</main>
+                        <div id="loadingSpinner" style="display: none;">
+                            <i class="fas fa-spinner fa-spin"></i> Searching...
+                        </div>
 
-	<footer class="py-4 bg-light">
-		<div class="container">
-			<div class="row">
-			</div>
-			<hr>
-			<p class="text-center mb-0">&copy; 2024 - Library Management System - All rights reserved</p>
-		</div>
-	</footer>
+                        <div id="searchResults" class="mt-3" style="display: none;">
+                            <select id="bookId" class="form-select"></select>
+                        </div>
 
+                    </div>
+                </div>
+                <a asp-controller="Account" asp-action="Logout" class="btn btn-info">Logout</a>
+            </header>
+        </div>
+    </div>
+
+    <main role="main" class="pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <nav class="nav flex-column">
+                        <a class="nav-link" asp-controller="Admin" asp-action="Dashboard"><i class="fas fa-chalkboard"></i> Dashboard</a>
+                        <a class="nav-link" asp-controller="Category" asp-action="Index"><i class="fas fa-list"></i> Category</a>
+                        <a class="nav-link" asp-controller="Author" asp-action="Index"><i class="fas fa-user"></i> Author</a>
+                        <a class="nav-link" asp-controller="Book" asp-action="Index"><i class="fas fa-book"></i> Book</a>
+                        <a class="nav-link" asp-controller="User" asp-action="Index"><i class="fas fa-users"></i> User</a>
+                        <a class="nav-link" asp-controller="Loan" asp-action="Index"><i class="fas fa-money-check-alt"></i> Loan</a>
+                    </nav>
+                </div>
+                <div class="col-md-9">
+                    <div class="content">
+                        @RenderBody()
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-4 bg-light">
+        <div class="container">
+            <div class="row">
+            </div>
+            <hr>
+            <p class="text-center mb-0">&copy; 2024 - Library Management System - All rights reserved</p>
+        </div>
+    </footer>
 </body>
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
 <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script src="~/js/site.js" asp-append-version="true"></script>
+
 @await RenderSectionAsync("Scripts", required: false)
 </html>
