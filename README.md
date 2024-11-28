@@ -1,6 +1,7 @@
 # Library Management System
 
 Description: Develop a system for managing library resources, including books, authors, categories, and user accounts.
+
 Admin Account: 
 - username: admin@gmail.com
 - password: Admin@123
