@@ -1,87 +1,90 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"]</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="~/Shared/_AdminLayout.cshtml.css" asp-append-version="true" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>@ViewData["Title"]</title>
+	<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<link rel="stylesheet" href="~/Shared/_AdminLayout.cshtml.css" asp-append-version="true" />
 
-    <style>
-        nav {
-            background-color: #f8f8f9;
-            color: #ffffff;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 250px;
-            height: 100vh;
-        }
+	<style>
+		nav {
+			background-color: #f8f8f9;
+			color: #ffffff;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 250px;
+			height: 100vh;
+		}
 
-        .nav-link {
-            color: black;
-            font-weight: 500;
-            padding: 0.5rem 1rem;
-            transition: color 0.2s, background-color 0.2s;
-            border-radius: 0.25rem;
-        }
+		.nav-link {
+			color: black;
+			font-weight: 500;
+			padding: 0.5rem 1rem;
+			transition: color 0.2s, background-color 0.2s;
+			border-radius: 0.25rem;
+		}
 
-        main {
-            margin-left: 230px;
-            padding: 1rem;
-            flex-grow: 1;
-        }
+		main {
+			margin-left: 230px;
+			padding: 1rem;
+			flex-grow: 1;
+		}
 
-        .container-fluid {
-            gap: 20px;
-        }
+		.container-fluid {
+			gap: 20px;
+		}
 
-    </style>
+	</style>
 </head>
 <body class="bg-light">
-    <header class="d-flex justify-content-end align-items-center bg-white p-2">
-        <div class="search-box w-50" style="margin-right: 20px">
-            <form id="searchForm" method="get" action="/Book/Search" class="input-group">
-                <input type="text"
-                       id="searchInput"
-                       name="search"
-                       placeholder="Search books..."
-                       class="form-control" />
-                <button type="submit" class="btn btn-primary">
-                    <i class="fas fa-search"></i>
-                </button>
-            </form>
-            <div id="loadingSpinner" class="text-muted mt-2" style="display: none;">
-                <i class="fas fa-spinner fa-spin"></i> Searching...
-            </div>
-            <div id="searchResults" class="mt-3" style="display: none;">
-                <select id="bookId" class="form-select"></select>
-            </div>
-        </div>
-        <a asp-controller="Account" asp-action="Logout" class="btn btn-info mx-1 d-flex align-items-center">
-            <i class="fas fa-sign-out-alt"></i> Logout
-        </a>
-    </header>
+	<header class="d-flex justify-content-end align-items-center bg-white p-2">
+		<div class="search-box w-50" style="margin-right: 50px">
+			<form id="searchForm" method="get" action="/Book/Search" class="input-group">
+				<input type="text"
+					   id="searchInput"
+					   name="search"
+					   placeholder="Search books..."
+					   class="form-control" />
+				<button type="submit" class="btn btn-primary">
+					<i class="fas fa-search"></i>
+				</button>
+			</form>
+			<div id="loadingSpinner" class="text-muted mt-2" style="display: none;">
+				<i class="fas fa-spinner fa-spin"></i> Searching...
+			</div>
+			<div id="searchResults" class="mt-3" style="display: none;">
+				<select id="bookId" class="form-select"></select>
+			</div>
+		</div>
+		<a asp-controller="Home" asp-action="Index" class="btn btn-info mx-1 d-flex align-items-center">
+			Back To HomePage
+		</a>
+		<a asp-controller="Account" asp-action="Logout" class="btn btn-info mx-1 d-flex align-items-center">
+			<i class="fas fa-sign-out-alt"></i> Logout
+		</a>
+	</header>
 
-    <div class="container-fluid flex-grow-1 d-flex">
-        <nav class="p-3" style="width: 230px; background-color: #7267B8">
+	<div class="container-fluid flex-grow-1 d-flex">
+		<nav class="p-3" style="width: 230px; background-color: #7267B8">
 
-            <ul class="nav flex-column">
-                <a class="nav-link" asp-controller="Admin" asp-action="Dashboard" style="color: white"><i class="fas fa-chalkboard"></i> Dashboard</a>
-                <a class="nav-link" asp-controller="Category" asp-action="Index" style="color: white"><i class="fas fa-list"></i> Category</a>
-                <a class="nav-link" asp-controller="Author" asp-action="Index" style="color: white"><i class="fas fa-user"></i> Author</a>
-                <a class="nav-link" asp-controller="Book" asp-action="Index" style="color: white"><i class="fas fa-book"></i> Book</a>
-                <a class="nav-link" asp-controller="User" asp-action="Index" style="color: white"><i class="fas fa-users"></i> User</a>
-                <a class="nav-link" asp-controller="Loan" asp-action="Index" style="color: white"><i class="fas fa-money-check-alt"></i> Loan</a>
-            </ul>
-        </nav>
-    </div>
+			<ul class="nav flex-column">
+				<a class="nav-link" asp-controller="Admin" asp-action="Dashboard" style="color: white"><i class="fas fa-chalkboard"></i> Dashboard</a>
+				<a class="nav-link" asp-controller="Category" asp-action="Index" style="color: white"><i class="fas fa-list"></i> Category</a>
+				<a class="nav-link" asp-controller="Author" asp-action="Index" style="color: white"><i class="fas fa-user"></i> Author</a>
+				<a class="nav-link" asp-controller="Book" asp-action="Index" style="color: white"><i class="fas fa-book"></i> Book</a>
+				<a class="nav-link" asp-controller="User" asp-action="Index" style="color: white"><i class="fas fa-users"></i> User</a>
+				<a class="nav-link" asp-controller="Loan" asp-action="Index" style="color: white"><i class="fas fa-money-check-alt"></i> Loan</a>
+			</ul>
+		</nav>
+	</div>
 
-    <main class="mr-2">
-        @RenderBody()
-    </main>
+	<main class="mr-2">
+		@RenderBody()
+	</main>
 </body>
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
 <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
