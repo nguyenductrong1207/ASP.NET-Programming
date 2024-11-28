@@ -10,13 +10,40 @@
     <link rel="stylesheet" href="~/LibraryManagement.styles.css" asp-append-version="true" />
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            <header class="d-flex justify-content-between align-items-center">
+    @if (ViewData["IsAdminLayout"] != null && (bool)ViewData["IsAdminLayout"])
+    {
+        @RenderBody()
+    }
+    else
+    {
+        <header class="bg-light">
+            <div class="nav-body d-flex align-items-center justify-content-between px-4">
                 <a class="nav-link" asp-controller="Home" asp-action="Index">
-                    <img src="~/images/logo.jpg" alt="Logo" width="120" />
+                    <img src="~/images/logo-4.png" alt="Logo" width="120" />
                 </a>
-                <div class="search-box" style="width: 50%">
+                <nav class="flex-grow-1 mx-4">
+                    <ul class="nav nav-pills justify-content-center">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" asp-controller="Home" asp-action="Index" style="color:black">Home page</a>
+                        </li>
+                        @if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Admin" asp-action="Dashboard" style="color:black">Admin</a>
+                            </li>
+                        }
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" asp-controller="Book" asp-action="List" asp-route-category="Programming" style="color:black">Programming Book</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" asp-controller="Book" asp-action="List" asp-route-category="Fiction" style="color:black">Fiction Book</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" asp-controller="Book" asp-action="List" asp-route-category="Science Fiction" style="color:black">Science Fiction Book</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="search-box mx-4" style="width: 25%">
                     <form method="get" asp-action="Search">
                         <div class="input-group">
                             <input type="text" name="search" placeholder="Search books..." class="form-control" />
@@ -26,91 +53,60 @@
                         </div>
                     </form>
                 </div>
-                <div>
+                <div class="user-actions d-flex">
                     @if (User.Identity.IsAuthenticated)
                     {
-                        <a asp-controller="Account" asp-action="Logout" class="btn btn-info">Logout</a>
+                        <a asp-controller="Account" asp-action="Logout" class="btn btn-info mx-1 d-flex align-items-center">
+                            <i class="fas fa-sign-out-alt"></i> Logout
+                        </a>
                     }
                     else
                     {
-                        <a asp-controller="Account" asp-action="SignUp" class="btn btn-info">Sign Up</a>
-                        <a asp-controller="Account" asp-action="Login" class="btn btn-info">Login</a>
+                        <a asp-controller="Account" asp-action="SignUp" class="btn btn-info mx-1 d-flex align-items-center" style="width: max-content">
+                            <i class="fas fa-user-plus"></i> Sign Up
+                        </a>
+                        <a asp-controller="Account" asp-action="Login" class="btn btn-outline-primary mx-1 d-flex align-items-center">
+                            <i class="fas fa-sign-in-alt"></i> Login
+                        </a>
                     }
                 </div>
-            </header>
-        </div>
-    </div>
-
-
-    <div class="nav-body">
-        @*         <div class="dropdown">
-        <button type="button" class="btn dropdown-toggle text-white" data-bs-toggle="dropdown" id="dropdownmenubutton">
-        book category
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownmenubutton">
-        <li><a class="dropdown-item" href="#">book 1</a></li>
-        <li><a class="dropdown-item" href="#">book 2</a></li>
-        <li><a class="dropdown-item" href="#">book 3</a></li>
-        </ul>
-        </div> *@
-
-        <nav>
-            <ul class="nav nav-pills">
-                <li class="nav-item mx-5">
-                    <a class="nav-link" asp-controller="Home" asp-action="Index" style="color:white">Home page</a>
-                </li>
-                @if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
-                {
-                    <li class="nav-item">
-                        <a class="nav-link" asp-controller="Admin" asp-action="Dashboard" style="color:white">Admin</a>
-                    </li>
-                }
-                <li class="nav-item">
-                    <a class="nav-link" asp-controller="Book" asp-action="List" asp-route-category="Programming" style="color:white">Programming Book</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" asp-controller="Book" asp-action="List" asp-route-category="Fiction" style="color:white">Fiction Book</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" asp-controller="Book" asp-action="List" asp-route-category="Science Fiction" style="color:white">Science Fiction Book</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-
-    <main role="main" class="pb-3">
-        @RenderBody()
-    </main>
-
-    <footer class="py-4 bg-light">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h5>About Us</h5>
-                    <p>Library Management System provides comprehensive solutions for managing library resources and services.</p>
-                </div>
-                <div class="col-md-4">
-                    <h5>Contact</h5>
-                    <p>
-                        Email: library@example.com<br>
-                        Phone: (123) 456-7890<br>
-                        Address: 123 Library Street
-                    </p>
-                </div>
-                <div class="col-md-4">
-                    <h5>Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-muted">Home</a></li>
-                        <li><a href="#" class="text-muted">Books</a></li>
-                        <li><a href="#" class="text-muted">Contact</a></li>
-                    </ul>
-                </div>
             </div>
-            <hr>
-            <p class="text-center mb-0">&copy; 2024 - Library Management System - All rights reserved</p>
-        </div>
-    </footer>
+        </header>
 
+
+        <main role="main">
+            @RenderBody()
+        </main>
+
+        <footer class="py-4 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5>About Us</h5>
+                        <p>Library Management System provides comprehensive solutions for managing library resources and services.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Contact</h5>
+                        <p>
+                            Email: library@example.com<br>
+                            Phone: (123) 456-7890<br>
+                            Address: 123 Library Street
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Quick Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-muted">Home</a></li>
+                            <li><a href="#" class="text-muted">Books</a></li>
+                            <li><a href="#" class="text-muted">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="text-center mb-0">&copy; 2024 - Library Management System - All rights reserved</p>
+            </div>
+        </footer>
+    }
 </body>
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
 <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

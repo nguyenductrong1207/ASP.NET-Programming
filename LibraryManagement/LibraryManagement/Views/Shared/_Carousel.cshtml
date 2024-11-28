@@ -5,7 +5,7 @@
 		@foreach (var item in Model)
 		{
 			<div class="carousel-item @(item.Order == 1 ? "active" : "")">
-				<img src="~/@item.ImageUrl" class="d-block w-100" alt="@item.Title">
+				<img src="~/@item.ImageUrl" class="d-block w-100" alt="@item.Title" style="max-height: 700px">
 				<div class="carousel-caption d-none d-md-block">
 					<h5>@item.Title</h5>
 					<p>@item.Description</p>
