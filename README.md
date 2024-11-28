@@ -1,7 +1,16 @@
 # Library Management System
 
 Description: Develop a system for managing library resources, including books, authors, categories, and user accounts.
+Admin Account: 
+- username: admin@gmail.com
+- password: Admin@123
 
+Team Member:  
+
+              - https://github.com/nguyenductrong1207
+              - https://github.com/huongduyen3012
+              - https://github.com/KietLuong1
+              
 Key Features:
 - User authentication and role-based authorization (Admin, User).
 - CRUD operations for books, authors, and categories.
