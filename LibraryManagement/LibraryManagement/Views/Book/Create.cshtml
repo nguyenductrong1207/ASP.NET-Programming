@@ -9,7 +9,7 @@
 
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Create">
+        <form asp-action="Create" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
             <div class="mb-3">
                 <label asp-for="Title" class="form-label"></label>
@@ -60,7 +60,8 @@
                 <span asp-validation-for="CreatedDate" class="text-danger"></span>
             </div>
             <div class="mb-3">
-                <label asp-for="Avatar" class="control-label"></label>
+                <label asp-for="Avatar" class="form-label">Book Image</label>
+                <input type="file" class="form-control" asp-for="Avatar" name="avatarFile" />
                 <input asp-for="Avatar" class="form-control" />
                 <span asp-validation-for="Avatar" class="text-danger"></span>
             </div>

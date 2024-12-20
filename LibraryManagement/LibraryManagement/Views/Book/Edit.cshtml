@@ -64,8 +64,14 @@
             </div>
             <div class="form-group">
                 <label asp-for="Avatar" class="control-label"></label>
-                <input asp-for="Avatar" class="form-control" />
+                <input type="file" asp-for="Avatar" class="form-control" id="AvatarFile" name="avatarFile" />
                 <span asp-validation-for="Avatar" class="text-danger"></span>
+                @if (!string.IsNullOrEmpty(Model.Avatar))
+                {
+                    <div class="mt-2">
+                        <img src="~/@Model.Avatar" alt="Book Image" style="width: 100px; height: auto;" />
+                    </div>
+                }
             </div>
             <div class="form-group">
                 <label asp-for="Pdf" class="control-label"></label>

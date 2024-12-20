@@ -241,26 +241,6 @@
       "PackagePath": "staticwebassets\\images\\books\\xa-hoi-6.png"
     },
     {
-      "Id": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\wwwroot\\images\\carousel\\banner-1.webp",
-      "PackagePath": "staticwebassets\\images\\carousel\\banner-1.webp"
-    },
-    {
-      "Id": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\wwwroot\\images\\carousel\\banner-2.jpg",
-      "PackagePath": "staticwebassets\\images\\carousel\\banner-2.jpg"
-    },
-    {
-      "Id": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\wwwroot\\images\\carousel\\banner-3.jpg",
-      "PackagePath": "staticwebassets\\images\\carousel\\banner-3.jpg"
-    },
-    {
-      "Id": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\wwwroot\\images\\carousel\\banner.jpg",
-      "PackagePath": "staticwebassets\\images\\carousel\\banner.jpg"
-    },
-    {
-      "Id": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\wwwroot\\images\\carousel\\image.jpg",
-      "PackagePath": "staticwebassets\\images\\carousel\\image.jpg"
-    },
-    {
       "Id": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\wwwroot\\images\\carousel\\image1.jpg",
       "PackagePath": "staticwebassets\\images\\carousel\\image1.jpg"
     },
@@ -273,32 +253,8 @@
       "PackagePath": "staticwebassets\\images\\carousel\\image3.jpg"
     },
     {
-      "Id": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\wwwroot\\images\\carousel\\image4.jpg",
-      "PackagePath": "staticwebassets\\images\\carousel\\image4.jpg"
-    },
-    {
-      "Id": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\wwwroot\\images\\carousel\\image5.webp",
-      "PackagePath": "staticwebassets\\images\\carousel\\image5.webp"
-    },
-    {
-      "Id": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\wwwroot\\images\\logo-1.jpg",
-      "PackagePath": "staticwebassets\\images\\logo-1.jpg"
-    },
-    {
-      "Id": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\wwwroot\\images\\logo-2.png",
-      "PackagePath": "staticwebassets\\images\\logo-2.png"
-    },
-    {
-      "Id": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\wwwroot\\images\\logo-3.png",
-      "PackagePath": "staticwebassets\\images\\logo-3.png"
-    },
-    {
       "Id": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\wwwroot\\images\\logo-4.png",
       "PackagePath": "staticwebassets\\images\\logo-4.png"
-    },
-    {
-      "Id": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\wwwroot\\images\\logo.jpg",
-      "PackagePath": "staticwebassets\\images\\logo.jpg"
     },
     {
       "Id": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\wwwroot\\js\\site.js",
