@@ -104,14 +104,35 @@ namespace LibraryManagement.Controllers
         // POST: Book/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("BookId,Title,Description,BookCode,Publisher,PublishedYear,CategoryId,AuthorId,TotalCopies,AvailableCopies,CreatedDate,Avatar,Pdf")] Book book)
+        public async Task<IActionResult> Create([Bind("BookId,Title,Description,BookCode,Publisher,PublishedYear,CategoryId,AuthorId,TotalCopies,AvailableCopies,CreatedDate,Pdf")] Book book, IFormFile avatarFile)
         {
             if (ModelState.IsValid)
             {
+                if (avatarFile != null && avatarFile.Length > 0)
+                {
+                    // Get the path to save the image
+                    string folderPath = Path.Combine("wwwroot", "images", "books");
+                    string fileName = Path.GetFileName(avatarFile.FileName);
+                    string filePath = Path.Combine(folderPath, fileName);
+
+                    // Ensure the directory exists
+                    Directory.CreateDirectory(folderPath);
+
+                    // Save the image file to the folder
+                    using (var stream = new FileStream(filePath, FileMode.Create))
+                    {
+                        await avatarFile.CopyToAsync(stream);
+                    }
+
+                    // Set the Avatar property to the relative path
+                    book.Avatar = Path.Combine("images", "books", fileName);
+                }
+
                 _LibraryDbContext.Add(book);
                 await _LibraryDbContext.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+
             ViewData["AuthorId"] = new SelectList(_LibraryDbContext.Authors, "AuthorId", "FirstName", book.AuthorId);
             ViewData["CategoryId"] = new SelectList(_LibraryDbContext.Categories, "CategoryId", "Name", book.CategoryId);
             return View(book);
