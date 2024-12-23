@@ -35,8 +35,8 @@ namespace LibraryManagement.Models
 
         public DateTime CreatedDate { get; set; }
 
-        public string Avatar { get; set; } 
+        public string? Avatar { get; set; } 
 
-        public string Pdf { get; set; } = "pdf/";
+        public string? Pdf { get; set; } 
     }
 }

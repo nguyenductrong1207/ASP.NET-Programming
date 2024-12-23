@@ -89,18 +89,18 @@
                 <img src="@item.Avatar" alt="Avatar" style="width: 50px; height: auto;" />
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Pdf)
+                <a href="~/@item.Pdf" target="_blank">View PDF</a>
             </td>
             <td>
-                    <a asp-action="Edit" asp-route-id="@item.BookId">
-                        <i class="fas fa-edit"></i>
-                    </a>
-                    <a asp-action="Details" asp-route-id="@item.BookId">
-                        <i class="fas fa-info-circle"></i>
-                    </a>
-                    <a asp-action="Delete" asp-route-id="@item.BookId">
-                        <i class="fas fa-trash-alt"></i>
-                    </a>
+                <a asp-action="Edit" asp-route-id="@item.BookId">
+                    <i class="fas fa-edit"></i>
+                </a>
+                <a asp-action="Details" asp-route-id="@item.BookId">
+                    <i class="fas fa-info-circle"></i>
+                </a>
+                <a asp-action="Delete" asp-route-id="@item.BookId">
+                    <i class="fas fa-trash-alt"></i>
+                </a>
             </td>
         </tr>
 }

@@ -104,28 +104,18 @@ namespace LibraryManagement.Controllers
         // POST: Book/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("BookId,Title,Description,BookCode,Publisher,PublishedYear,CategoryId,AuthorId,TotalCopies,AvailableCopies,CreatedDate,Pdf")] Book book, IFormFile avatarFile)
+        public async Task<IActionResult> Create([Bind("BookId,Title,Description,BookCode,Publisher,PublishedYear,CategoryId,AuthorId,TotalCopies,AvailableCopies,CreatedDate,Avatar,Pdf")] Book book, IFormFile avatarFile, IFormFile pdfFile)
         {
             if (ModelState.IsValid)
             {
                 if (avatarFile != null && avatarFile.Length > 0)
                 {
-                    // Get the path to save the image
-                    string folderPath = Path.Combine("wwwroot", "images", "books");
-                    string fileName = Path.GetFileName(avatarFile.FileName);
-                    string filePath = Path.Combine(folderPath, fileName);
+                    book.Avatar = await HandleAvatarUpload(avatarFile);
+                }
 
-                    // Ensure the directory exists
-                    Directory.CreateDirectory(folderPath);
-
-                    // Save the image file to the folder
-                    using (var stream = new FileStream(filePath, FileMode.Create))
-                    {
-                        await avatarFile.CopyToAsync(stream);
-                    }
-
-                    // Set the Avatar property to the relative path
-                    book.Avatar = Path.Combine("images", "books", fileName);
+                if (pdfFile != null && pdfFile.Length > 0)
+                {
+                    book.Pdf = await HandlePdfUpload(pdfFile);
                 }
 
                 _LibraryDbContext.Add(book);
@@ -159,7 +149,7 @@ namespace LibraryManagement.Controllers
         // POST: Book/Edit/Id
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("BookId,Title,Description,BookCode,Publisher,PublishedYear,CategoryId,AuthorId,TotalCopies,AvailableCopies,CreatedDate,Avatar,Pdf")] Book book)
+        public async Task<IActionResult> Edit(int id, [Bind("BookId,Title,Description,BookCode,Publisher,PublishedYear,CategoryId,AuthorId,TotalCopies,AvailableCopies,CreatedDate,Avatar,Pdf")] Book book, IFormFile avatarFile, IFormFile pdfFile)
         {
             if (id != book.BookId)
             {
@@ -170,6 +160,16 @@ namespace LibraryManagement.Controllers
             {
                 try
                 {
+                    if (avatarFile != null && avatarFile.Length > 0)
+                    {
+                        book.Avatar = await HandleAvatarUpload(avatarFile, book.Avatar);
+                    }
+
+                    if (pdfFile != null && pdfFile.Length > 0)
+                    {
+                        book.Pdf = await HandlePdfUpload(pdfFile, book.Pdf);
+                    }
+
                     _LibraryDbContext.Update(book);
                     await _LibraryDbContext.SaveChangesAsync();
                 }
@@ -251,6 +251,75 @@ namespace LibraryManagement.Controllers
                 .ToListAsync();
 
             return Json(books);
+        }
+
+        private async Task<string> HandleAvatarUpload(IFormFile avatarFile, string existingAvatarPath = null)
+        {
+            var folderPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images/books");
+
+            if (!Directory.Exists(folderPath))
+            {
+                Directory.CreateDirectory(folderPath);
+            }
+
+            if (!string.IsNullOrEmpty(existingAvatarPath) && avatarFile != null)
+            {
+                var existingFilePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", existingAvatarPath);
+                if (System.IO.File.Exists(existingFilePath))
+                {
+                    System.IO.File.Delete(existingFilePath);
+                }
+            }
+
+            if (avatarFile != null && avatarFile.Length > 0)
+            {
+
+                var fileName = $"{Guid.NewGuid()}_{avatarFile.FileName}";
+
+                var filePath = Path.Combine(folderPath, fileName);
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    await avatarFile.CopyToAsync(stream);
+                }
+
+                return "images/books/" + fileName;
+            }
+
+            return existingAvatarPath;
+        }
+
+        private async Task<string> HandlePdfUpload(IFormFile pdfFile, string existingPdfPath = null)
+        {
+            var folderPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/pdf");
+
+            if (!Directory.Exists(folderPath))
+            {
+                Directory.CreateDirectory(folderPath);
+            }
+
+            if (!string.IsNullOrEmpty(existingPdfPath) && pdfFile != null)
+            {
+                var existingFilePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", existingPdfPath);
+                if (System.IO.File.Exists(existingFilePath))
+                {
+                    System.IO.File.Delete(existingFilePath);
+                }
+            }
+
+            if (pdfFile != null && pdfFile.Length > 0)
+            {
+                var fileName = $"{Guid.NewGuid()}_{pdfFile.FileName}";
+
+                var filePath = Path.Combine(folderPath, fileName);
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    await pdfFile.CopyToAsync(stream);
+                }
+
+                return "pdf/" + fileName;
+            }
+
+            return existingPdfPath;
         }
 
     }

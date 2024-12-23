@@ -61,12 +61,12 @@
             </div>
             <div class="mb-3">
                 <label asp-for="Avatar" class="form-label">Book Image</label>
-                <input type="file" class="form-control" asp-for="Avatar" name="avatarFile" />
+                <input type="file" class="form-control" asp-for="Avatar" name="avatarFile" accept="image/*" />
                 <span asp-validation-for="Avatar" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Pdf" class="control-label"></label>
-                <input asp-for="Pdf" class="form-control" />
+                <input type="file" asp-for="Pdf" class="form-control" name="pdfFile" accept="application/pdf" />
                 <span asp-validation-for="Pdf" class="text-danger"></span>
             </div>
             <div class="form-group mt-2">

@@ -197,6 +197,46 @@
       "PackagePath": "staticwebassets\\images\\account\\google-icon.png"
     },
     {
+      "Id": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\wwwroot\\images\\books\\001c9320-b59b-4801-828d-2876e6d53e79_1.png",
+      "PackagePath": "staticwebassets\\images\\books\\001c9320-b59b-4801-828d-2876e6d53e79_1.png"
+    },
+    {
+      "Id": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\wwwroot\\images\\books\\19600ccf-35e1-4d48-b3cf-71578f59bb25_1.png",
+      "PackagePath": "staticwebassets\\images\\books\\19600ccf-35e1-4d48-b3cf-71578f59bb25_1.png"
+    },
+    {
+      "Id": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\wwwroot\\images\\books\\1de1237e-5583-4ed7-8b64-d665bdf9e9c0_c966d6c6f4314c6f1520.jpg",
+      "PackagePath": "staticwebassets\\images\\books\\1de1237e-5583-4ed7-8b64-d665bdf9e9c0_c966d6c6f4314c6f1520.jpg"
+    },
+    {
+      "Id": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\wwwroot\\images\\books\\46c710dd-6a24-42f6-9331-47004a1797b6_1.png",
+      "PackagePath": "staticwebassets\\images\\books\\46c710dd-6a24-42f6-9331-47004a1797b6_1.png"
+    },
+    {
+      "Id": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\wwwroot\\images\\books\\658bc6b4-47ee-4374-a7f9-8895ac92534d_c966d6c6f4314c6f1520.jpg",
+      "PackagePath": "staticwebassets\\images\\books\\658bc6b4-47ee-4374-a7f9-8895ac92534d_c966d6c6f4314c6f1520.jpg"
+    },
+    {
+      "Id": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\wwwroot\\images\\books\\668735a9-4654-4a3d-89d0-a7f956dc8b50_1.png",
+      "PackagePath": "staticwebassets\\images\\books\\668735a9-4654-4a3d-89d0-a7f956dc8b50_1.png"
+    },
+    {
+      "Id": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\wwwroot\\images\\books\\7f9b9484-27a6-4feb-96db-1545c590e525_c966d6c6f4314c6f1520.jpg",
+      "PackagePath": "staticwebassets\\images\\books\\7f9b9484-27a6-4feb-96db-1545c590e525_c966d6c6f4314c6f1520.jpg"
+    },
+    {
+      "Id": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\wwwroot\\images\\books\\81c74712-4b54-410c-ba98-d9a624565eb0_1.png",
+      "PackagePath": "staticwebassets\\images\\books\\81c74712-4b54-410c-ba98-d9a624565eb0_1.png"
+    },
+    {
+      "Id": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\wwwroot\\images\\books\\872331ed-e4a9-439b-b367-6202f9c2ae1a_Các Môn Học Trùng TKB.png",
+      "PackagePath": "staticwebassets\\images\\books\\872331ed-e4a9-439b-b367-6202f9c2ae1a_Các Môn Học Trùng TKB.png"
+    },
+    {
+      "Id": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\wwwroot\\images\\books\\96e6824d-8e9c-4c01-a1cb-1c9d3b49e086_Các Môn Học Trùng TKB.png",
+      "PackagePath": "staticwebassets\\images\\books\\96e6824d-8e9c-4c01-a1cb-1c9d3b49e086_Các Môn Học Trùng TKB.png"
+    },
+    {
       "Id": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\wwwroot\\images\\books\\am-nhac-6.png",
       "PackagePath": "staticwebassets\\images\\books\\am-nhac-6.png"
     },
@@ -205,12 +245,36 @@
       "PackagePath": "staticwebassets\\images\\books\\am-nhac.png"
     },
     {
+      "Id": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\wwwroot\\images\\books\\befcf34e-62b4-4b7e-8a90-dd8eefd3060c_c966d6c6f4314c6f1520.jpg",
+      "PackagePath": "staticwebassets\\images\\books\\befcf34e-62b4-4b7e-8a90-dd8eefd3060c_c966d6c6f4314c6f1520.jpg"
+    },
+    {
+      "Id": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\wwwroot\\images\\books\\c53ea8d8-651f-4026-af4c-b540d367fa5d_c966d6c6f4314c6f1520.jpg",
+      "PackagePath": "staticwebassets\\images\\books\\c53ea8d8-651f-4026-af4c-b540d367fa5d_c966d6c6f4314c6f1520.jpg"
+    },
+    {
+      "Id": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\wwwroot\\images\\books\\ccbe3d17-50c7-48af-bedc-b5883bc643ca_1.png",
+      "PackagePath": "staticwebassets\\images\\books\\ccbe3d17-50c7-48af-bedc-b5883bc643ca_1.png"
+    },
+    {
       "Id": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\wwwroot\\images\\books\\children-bookstore.jpg",
       "PackagePath": "staticwebassets\\images\\books\\children-bookstore.jpg"
     },
     {
       "Id": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\wwwroot\\images\\books\\cong-nghe-6.png",
       "PackagePath": "staticwebassets\\images\\books\\cong-nghe-6.png"
+    },
+    {
+      "Id": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\wwwroot\\images\\books\\e8293911-15d0-4077-aaa6-5d15fa152b88_c966d6c6f4314c6f1520.jpg",
+      "PackagePath": "staticwebassets\\images\\books\\e8293911-15d0-4077-aaa6-5d15fa152b88_c966d6c6f4314c6f1520.jpg"
+    },
+    {
+      "Id": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\wwwroot\\images\\books\\f1d84926-65ba-4cd0-b5d7-d43c71e531f4_c966d6c6f4314c6f1520.jpg",
+      "PackagePath": "staticwebassets\\images\\books\\f1d84926-65ba-4cd0-b5d7-d43c71e531f4_c966d6c6f4314c6f1520.jpg"
+    },
+    {
+      "Id": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\wwwroot\\images\\books\\f8152d64-1da9-482f-9dd1-4bcfdbe6e619_c966d6c6f4314c6f1520.jpg",
+      "PackagePath": "staticwebassets\\images\\books\\f8152d64-1da9-482f-9dd1-4bcfdbe6e619_c966d6c6f4314c6f1520.jpg"
     },
     {
       "Id": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\wwwroot\\images\\books\\gdcd-6.png",
@@ -489,6 +553,42 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\wwwroot\\pdf\\0280b193-9383-4113-9c16-4bc2ffeaa471_Project Assignment.pdf",
+      "PackagePath": "staticwebassets\\pdf\\0280b193-9383-4113-9c16-4bc2ffeaa471_Project Assignment.pdf"
+    },
+    {
+      "Id": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\wwwroot\\pdf\\373d489f-135c-40ef-bb2c-36830ad7ddb5_Project Assignment.pdf",
+      "PackagePath": "staticwebassets\\pdf\\373d489f-135c-40ef-bb2c-36830ad7ddb5_Project Assignment.pdf"
+    },
+    {
+      "Id": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\wwwroot\\pdf\\46476c9a-aa26-41b0-a1c0-9ea0cdcce750_MindX Online Teacher.pdf",
+      "PackagePath": "staticwebassets\\pdf\\46476c9a-aa26-41b0-a1c0-9ea0cdcce750_MindX Online Teacher.pdf"
+    },
+    {
+      "Id": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\wwwroot\\pdf\\6d00a57f-7b64-4578-8902-af596718fae9_Project Assignment.pdf",
+      "PackagePath": "staticwebassets\\pdf\\6d00a57f-7b64-4578-8902-af596718fae9_Project Assignment.pdf"
+    },
+    {
+      "Id": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\wwwroot\\pdf\\7264bedc-6afd-4734-9a07-e1aff4e0fae9_C24TLP-00000057-KCGDBW9GTEF-DPH.pdf",
+      "PackagePath": "staticwebassets\\pdf\\7264bedc-6afd-4734-9a07-e1aff4e0fae9_C24TLP-00000057-KCGDBW9GTEF-DPH.pdf"
+    },
+    {
+      "Id": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\wwwroot\\pdf\\8e2f9753-60bd-443b-9b7e-dbe3cc273cf5_Project Assignment.pdf",
+      "PackagePath": "staticwebassets\\pdf\\8e2f9753-60bd-443b-9b7e-dbe3cc273cf5_Project Assignment.pdf"
+    },
+    {
+      "Id": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\wwwroot\\pdf\\8e68c2de-cb39-49a7-90fd-413db8784aa7_Project Assignment.pdf",
+      "PackagePath": "staticwebassets\\pdf\\8e68c2de-cb39-49a7-90fd-413db8784aa7_Project Assignment.pdf"
+    },
+    {
+      "Id": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\wwwroot\\pdf\\990edc31-ed8f-479b-880a-4ad92878743a_Lab1.pdf",
+      "PackagePath": "staticwebassets\\pdf\\990edc31-ed8f-479b-880a-4ad92878743a_Lab1.pdf"
+    },
+    {
+      "Id": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\wwwroot\\pdf\\9d543191-f9e0-4e22-bcc6-4e0cd9838722_MindX Online Teacher.pdf",
+      "PackagePath": "staticwebassets\\pdf\\9d543191-f9e0-4e22-bcc6-4e0cd9838722_MindX Online Teacher.pdf"
+    },
+    {
       "Id": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\wwwroot\\pdf\\Lab1.pdf",
       "PackagePath": "staticwebassets\\pdf\\Lab1.pdf"
     },
@@ -515,6 +615,30 @@
     {
       "Id": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\wwwroot\\pdf\\Lab7.pdf",
       "PackagePath": "staticwebassets\\pdf\\Lab7.pdf"
+    },
+    {
+      "Id": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\wwwroot\\pdf\\b8f62b21-a88c-476b-a625-4ce9484ef3f7_C24TLP-00000057-KCGDBW9GTEF-DPH.pdf",
+      "PackagePath": "staticwebassets\\pdf\\b8f62b21-a88c-476b-a625-4ce9484ef3f7_C24TLP-00000057-KCGDBW9GTEF-DPH.pdf"
+    },
+    {
+      "Id": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\wwwroot\\pdf\\bd70e436-776d-4003-9bed-a8427f7e4f85_Project Assignment.pdf",
+      "PackagePath": "staticwebassets\\pdf\\bd70e436-776d-4003-9bed-a8427f7e4f85_Project Assignment.pdf"
+    },
+    {
+      "Id": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\wwwroot\\pdf\\d67168e2-df6a-4f07-bcc3-7e8779a3ace2_MindX Online Teacher.pdf",
+      "PackagePath": "staticwebassets\\pdf\\d67168e2-df6a-4f07-bcc3-7e8779a3ace2_MindX Online Teacher.pdf"
+    },
+    {
+      "Id": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\wwwroot\\pdf\\db3480e6-5e53-4e0c-bc75-e12d6a1a88bf_C24TLP-00000057-KCGDBW9GTEF-DPH.pdf",
+      "PackagePath": "staticwebassets\\pdf\\db3480e6-5e53-4e0c-bc75-e12d6a1a88bf_C24TLP-00000057-KCGDBW9GTEF-DPH.pdf"
+    },
+    {
+      "Id": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\wwwroot\\pdf\\e3f9d359-b730-4355-a8d2-3e6a66618451_MindX Online Teacher.pdf",
+      "PackagePath": "staticwebassets\\pdf\\e3f9d359-b730-4355-a8d2-3e6a66618451_MindX Online Teacher.pdf"
+    },
+    {
+      "Id": "D:\\Github\\ASP.NET-Programming\\ASP.NET-Programming\\LibraryManagement\\LibraryManagement\\wwwroot\\pdf\\ea61d10e-37a0-44d0-8d33-697552cb3ae0_Project Assignment.pdf",
+      "PackagePath": "staticwebassets\\pdf\\ea61d10e-37a0-44d0-8d33-697552cb3ae0_Project Assignment.pdf"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.LibraryManagement.Microsoft.AspNetCore.StaticWebAssets.props",
